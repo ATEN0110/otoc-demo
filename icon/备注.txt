@@ -1,0 +1,7 @@
+维修：icon-car-repair
+保养：icon-car-maintenance
+洗车：icon-car-wash
+事故：icon-car-accident
+美容：icon-car-beauty
+轮胎：icon-car-tyre
+其他：icon-car-other

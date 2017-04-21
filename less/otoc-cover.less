@@ -1,0 +1,92 @@
+////////////////////////////////////SUI框架组件-OTOC改写其默认样式 开始////////////////////////////////////
+//css对象全部基于原生SUI重新覆盖
+    //全局链接
+    a {
+      color: #3d4145;
+      text-decoration: none;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+    a:active {
+      color: #3d4145;
+    }
+    
+    p{ margin: 0;}
+    
+    .title{ color: #666 !important; font-weight: 400;}
+
+    //bar链接色
+    .bar .button-link{ color:#666 !important; }
+    
+    //按钮：OTOC蓝绿
+    .button-otoc {
+        border-color:@otoc-green;
+        background: @otoc-green;
+        color: #fff;
+    }
+    //线框按钮
+    .button-otoc-border{
+        border-color:@otoc-green;
+        color: @otoc-green;
+    }
+    
+     //垂直按钮间隙
+    .btn-group-vertical > a{ margin-bottom: 1rem;}
+    
+     //表单字体大小
+    .list-block input[type="text"], 
+    .list-block input[type="password"], 
+    .list-block input[type="search"], 
+    .list-block input[type="email"], 
+    .list-block input[type="tel"], 
+    .list-block input[type="url"], 
+    .list-block input[type="date"], 
+    .list-block input[type="datetime-local"], 
+    .list-block input[type="time"], 
+    .list-block input[type="number"],
+    .list-block select, 
+    .list-block textarea{ font-size:0.7rem;}
+    .list-block input[type="text"],.list-block input[type="tel"]{ padding: 0 0 0 0.5rem;}
+    .list-block{ margin: 0;}
+   
+   
+    
+    /*卡片*/
+   .card {
+        background: #fff;
+        box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.2);
+        margin: 0.5rem;
+        position: relative;
+        border-radius: 0.2rem;
+        font-size: 0.65rem;
+    }
+    .card-header{ font-size:0.75rem; display: block;} 
+    //  改变默认的 display: -webkit-box; 这些属性会导致自定义属性实现不了。
+    //  display: -webkit-flex;
+    //  display: flex;
+    .card .card-carnum{
+         font-size:0.85rem;
+    }
+    .card .b-radius-two{    
+         border-bottom-right-radius:0.2em;
+         border-bottom-left-radius:0.2em;}
+
+    
+    /*列表*/
+    //改默认样式字体大小
+    .list-block{ font-size: 0.7rem;}
+    
+    //改默认左侧空距离
+    .list-block .item-media + .item-inner{ margin-left: 0rem; }
+    .list-block .item-content{ padding-left: 0rem;}
+    .item-content .item-inner .item-title{ padding-left: 0.75rem;}
+    
+    //改默认左侧空距离
+    .content-block{ 
+        margin:0.75rem 0;
+        padding: 0 0.50rem; //解决按钮跟card两端对不齐问题
+        }
+    //改绑定手机列表上间距
+    .otoc-bindlist-martop{
+        margin: 0.75rem 0 0 0;
+    }
+////////////////////////////////////SUI框架组件-OTOC改写其默认样式  结束////////////////////////////////////    

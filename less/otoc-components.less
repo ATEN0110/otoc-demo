@@ -1,0 +1,87 @@
+////////////////////自定义公共组件 开始////////////////////
+
+////[组件名称：面板等宽]
+   .otoc-panel{ padding: 0.75rem; background: #fff;}
+    
+////[组件名称：标题行]
+   .otoc-title-space{ padding-left:0.75rem; height: 1.25rem; font-size:0.6rem; line-height:1.3rem;  color:@otoc-textcolor-666;}
+   
+////[组件名称：列表]
+
+    //列表heading  
+    .otoc-list-heading,.otoc-list-heading-lg{ line-height: 0.75rem; font-size: 0.75rem; border-bottom: 1px solid @otoc-list-b-border; clear: both;}
+     
+     //单行标题栏
+    .otoc-list-heading{
+         height: 1.5rem;
+             div:nth-child(1) {
+                span:nth-child(1){ float: left; color: @otoc-textcolor-333;}
+                span:nth-child(2){ float: right; text-align: right; color:@otoc-textcolor-333;}  
+             } 
+    }  
+   
+    //双行标题栏
+    .otoc-list-heading-lg {
+        div:nth-child(1){ 
+            height: 1.35rem;                                      //第一行
+                span:nth-child(1){ float: left; color: @otoc-textcolor-333;}
+                span:nth-child(2){ float: right; text-align: right; color:@otoc-textcolor-333;}
+        }  
+        div:nth-child(2){ 
+            height: 1.2rem;                                        //第二行
+                span:nth-child(1){ float: left; .otoc-s14-cgreen  }
+        } 
+    }
+ 
+    //列表body
+    .otoc-list-body{ padding:0.5rem 0; /*width: calc(100% - 0.75rem)*/;}
+    .otoc-list-body > div.otoc-list-row{ padding-bottom: 0.5rem; height: 1.375rem; line-height: 1.375rem; }
+    .otoc-list-body > div.otoc-list-row > div{ float: left; box-sizing: border-box; }
+    
+        //列表行
+        .otoc-list-body > div.otoc-list-row > div{ line-height: 1.25rem; .otoc-s12-c666;}
+        .otoc-list-body > div.otoc-list-row > div:nth-last-child(1){ text-align: right !important;}
+        .otoc-list-body > div.otoc-list-row > div:nth-last-child(2){ text-align: right !important;}
+        
+        //栅格
+        .otoc-list-body > div.otoc-list-row {
+            div.w-5 { width: 5%;}；
+            div.w-10{ width: 10%;}
+            div.w-15{ width: 15%;}
+            div.w-20{ width: 20%;}
+            div.w-25{ width: 25%;}
+            div.w-30{ width: 30%;}
+            div.w-35{ width: 35%;}
+            div.w-40{ width: 40%;}
+            div.w-45{ width: 45%;}
+            div.w-50{ width: 50%;}
+            div.w-55{ width: 55%;}
+            div.w-60{ width: 60%;}
+            div.w-65{ width: 65%;}
+            div.w-70{ width: 70%;}
+            div.w-75{ width: 75%;}
+            div.w-80{ width: 80%;}
+            div.w-85{ width: 85%;}
+            div.w-90{ width: 90%;}
+            div.w-95{ width: 95%;}
+        } 
+        
+       
+   
+    //列表footer
+    .otoc-list-footer{ padding-top: 0.625rem; .otoc-s14-c666; border-top: 1px solid @otoc-list-b-border;display: flex;justify-content: space-between;}
+//  .otoc-list-footer > span{ padding-right: 0.75rem;}
+    
+    
+    //智能控制-判断如果没有列表body元素，去掉footer的上边线，解决双线问题。
+    .otoc-list-heading + div[class=otoc-list-footer]{
+        border-top: none !important;
+    }
+   
+   
+   
+   
+   
+   
+
+

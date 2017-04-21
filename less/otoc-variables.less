@@ -1,0 +1,184 @@
+
+////////////////////////////////////全局基础变量////////////////////////////////////
+//otoc-VI色系
+@otoc-green:   #23bab5;
+
+//状态色
+@otoc-danger:   #eb3416;
+@otoc-success:  #43d117;
+@otoc-warning:  #f7900b;
+
+//灰阶
+@otoc-textcolor-gray-10:  rgba(51,51,51,.2);
+@otoc-textcolor-gray-50:  rgba(51,51,51,.5);
+@otoc-textcolor-gray-100: rgba(51,51,51,1);
+
+//标准字色阶
+@otoc-textcolor-333:  #333;  //深
+@otoc-textcolor-666:  #666;  //中
+@otoc-textcolor-999:  #999;  //浅
+
+//边框色
+@SUI-border-color:  #e7e7e7;
+@otoc-list-b-border:  #e6e6e6;
+
+
+
+////////////////////////////////////公共基础样式////////////////////////////////////
+//清除
+    .clear{ clear: both;}
+//定位
+    .otoc-p-r{ position: relative;}
+    .otoc-p-a{ position: absolute;}
+    
+//外边距
+    .otoc-m-10{ margin: 0.5rem !important;}
+    .otoc-m-t-10{ margin-top: 0.5rem !important;}
+    .otoc-m-b-10{ margin-bottom: 0.5rem !important;}
+    .otoc-m-l-10{ margin-left: 0.5rem !important;}
+    .otoc-m-r-10{ margin-right: 0.5rem !important;}
+    
+    .otoc-m-15{ margin: 0.75rem !important;}
+    .otoc-m-t-15{ margin-top: 0.75rem !important;}
+    .otoc-m-b-15{ margin-bottom: 0.75rem !important;}
+    .otoc-m-l-15{ margin-left: 0.75rem !important;}
+    .otoc-m-r-15{ margin-right: 0.75rem !important;}
+    
+    .otoc-m-20{ margin: 1rem !important;}
+    .otoc-m-t-20{ margin-top: 1rem !important;}
+    .otoc-m-b-20{ margin-bottom: 1rem !important;}
+    .otoc-m-l-20{ margin-left: 1rem !important;}
+    .otoc-m-r-20{ margin-right: 1rem !important;}
+    
+    .otoc-m-t-25{ margin-top: 1.25rem !important;}
+ 
+//内边距    
+    .otoc-p-l-7{ padding-left: 0.35rem !important;}
+    .otoc-p-l-7_5{ padding-left: 0.31rem !important;}
+    .otoc-p-l-8{ padding-left: 0.4rem !important;}
+    .otoc-p-l-9{ padding-left: 0.45rem !important;}
+    
+    .otoc-p-10{ padding: 0.5rem !important;}
+    .otoc-p-t-10{ padding-top: 0.5rem !important;}
+    .otoc-p-b-10{ padding-bottom: 0.5rem !important;}
+    .otoc-p-l-10{ padding-left: 0.5rem !important;}
+    .otoc-p-r-10{ padding-right: 0.5rem !important;}
+    
+    .otoc-p-l-11{ padding-left: 0.55rem !important;}
+    .otoc-p-l-12{ padding-left: 0.6rem !important;}
+    
+    .otoc-p-15{ padding: 0.75rem !important;}
+    .otoc-p-t-15{ padding-top: 0.75rem !important;}
+    .otoc-p-b-15{ padding-bottom: 0.75rem !important;}
+    .otoc-p-l-15{ padding-left: 0.75rem !important;}
+    .otoc-p-r-15{ padding-right: 0.75rem !important;}
+    
+    .otoc-p-20{ padding: 1rem !important;}
+    .otoc-p-t-20{ padding-top: 1rem !important;}
+    .otoc-p-b-20{ padding-bottom: 1rem !important;}
+    .otoc-p-l-20{ padding-left: 1rem !important;}
+    .otoc-p-r-20{ padding-right: 1rem !important;}
+    
+    .otoc-p-t-30{ padding-top: 1.5rem !important;}
+    .otoc-p-t-35{ padding-top: 1.75rem !important;}
+    .otoc-p-t-40{ padding-top: 2rem !important;}
+    
+//相对定位
+    .otoc-top-15{top:0.75rem;}
+    .otoc-top-20{top:1rem;}
+    .otoc-top-30{top:1.5rem;}
+  
+    .otoc-right-15{right:0.75rem;}
+    .otoc-right-20{right:1rem;}
+    .otoc-right-30{right:1.5rem;}
+  
+    .otoc-bottom-15{bottom:0.75rem;}
+    .otoc-bottom-20{bottom:1rem;}
+    .otoc-bottom-30{bottom:1.5rem;}
+  
+    .otoc-left-15{left:0.75rem;}
+    .otoc-left-20{left:1rem;}
+    .otoc-left-30{left:1.5rem;}
+  
+  
+    
+//字体大小
+    .otoc-fontsize-12{ font-size: 0.6rem;}
+    .otoc-fontsize-14{ font-size: 0.7rem;}
+    .otoc-fontsize-16{ font-size: 0.8rem;}
+    .otoc-fontsize-18{ font-size: 0.9rem;}
+    .otoc-fontsize-20{ font-size: 1.0rem;}
+    .otoc-fontsize-22{ font-size: 1.1rem;}
+    .otoc-fontsize-24{ font-size: 1.2rem;}
+    .otoc-fontsize-28{ font-size: 1.4rem;}
+    .otoc-fontsize-30{ font-size: 1.5rem;}
+    
+//字色结合
+    .otoc-s15-c333{ font-size: 0.75rem; color:@otoc-textcolor-666}
+    .otoc-s14-c333{ font-size: 0.7rem; color:@otoc-textcolor-666}
+    .otoc-s12-c666{ font-size: 0.6rem; color:@otoc-textcolor-666}
+    .otoc-s14-c666{ font-size: 0.7rem; color:@otoc-textcolor-666}
+    .otoc-s12-cgreen{ font-size: 0.6rem; color:@otoc-green} 
+    .otoc-s14-cgreen{ font-size: 0.7rem; color:@otoc-green} 
+    
+//字符串截取 
+    .otoc-text-overflow{ white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
+    
+//行高    
+    .otoc-lineheight-16{ line-height: 0.8rem;}
+    .otoc-lineheight-18{ line-height: 0.9rem;}
+    .otoc-lineheight-20{ line-height: 1rem;}
+    .otoc-lineheight-22{ line-height: 1.1rem;}
+    .otoc-lineheight-24{ line-height: 1.2rem;}
+    .otoc-lineheight-80{ line-height: 4rem;}
+    
+     
+//字体颜色
+    .otoc-textcolor-green{ color:@otoc-green !important;}
+    .otoc-textcolor-danger{ color: @otoc-danger !important;}
+    .otoc-textcolor-gray-10{ color: rgba(51,51,51,.2);}
+    .otoc-textcolor-gray-50{ color: rgba(51,51,51,.4);}
+    .otoc-textcolor-gray-100{ color: rgba(51,51,51,1),1;}
+    
+//排版
+    .otoc-textleft{ text-align: left !important; } 
+    .otoc-textcenter{ text-align: center !important; } 
+    .otoc-textright{ text-align: right !important; }
+    .otoc-span-line{ padding: 0 0.5rem; color: @SUI-border-color; }    
+//边线
+    .otoc-border-b-25{ border-bottom: 1px solid rgba(35,186,181,0.25);}
+    .otoc-border-b-50{ border-bottom: 1px solid rgba(35,186,181,0.5);}
+    .otoc-border-b-100{ border-bottom: 1px solid rgba(35,186,181,1);}
+
+//背景色
+    //白色        
+    .otoc-bg-white{ background:rgba(255,255,255,1)}
+    //灰色     
+    .otoc-bg-gray-5 { background:rgba(141,141,141,0.05)}
+    .otoc-bg-gray-10{ background:rgba(141,141,141,0.1)}
+    .otoc-bg-gray-20{ background:rgba(141,141,141,0.2) }
+    .otoc-bg-gray-30{ background:rgba(141,141,141,0.3) }
+    .otoc-bg-gray-40{ background:rgba(141,141,141,0.4) }
+    .otoc-bg-gray-50{ background:rgba(141,141,141,0.5) }
+    
+    //蓝绿
+    .otoc-bg-blueGreen-5 { background:rgba(35,186,181,0.05); color:@otoc-green; }
+    .otoc-bg-blueGreen-10{ background:rgba(35,186,181,0.1); color:@otoc-green;}
+    .otoc-bg-blueGreen-20{ background:rgba(35,186,181,0.2); color:@otoc-green;}
+    .otoc-bg-blueGreen-30{ background:rgba(35,186,181,0.3); color:@otoc-green;}
+    .otoc-bg-blueGreen-50{ background:rgba(35,186,181,0.5); color:@otoc-green;}
+    .otoc-bg-blueGreen-100{ background:rgba(35,186,181,1); color: #fff;}
+    
+//半透明   
+    .otoc-opacity-5{ opacity:0.05 ;}
+    .otoc-opacity-10{ opacity:0.1 ;}
+    .otoc-opacity-20{ opacity:0.2 ;}
+    .otoc-opacity-30{ opacity:0.3 ;}
+    .otoc-opacity-50{ opacity:0.5 ;}
+    .otoc-opacity-70{ opacity:0.7 ;}
+
+//投影
+    .otoc-boxshadow-5{ box-shadow: 0px 0.25rem 0.25rem rgba(76,76,76,0.05)}
+    .otoc-boxshadow-10 { box-shadow: 0px 0.25rem 0.25rem rgba(76,76,76,0.1)}
+    .otoc-boxshadow-30 { box-shadow: 0px 0.25rem 0.25rem rgba(76,76,76,0.3) }
+    
