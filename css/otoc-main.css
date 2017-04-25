@@ -52,7 +52,7 @@ p {
 /*卡片*/
 .card {
   background: #fff;
-  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.2);
+  box-shadow: none;
   margin: 0.5rem;
   position: relative;
   border-radius: 0.2rem;
@@ -438,7 +438,7 @@ p {
   box-shadow: 0px 0.25rem 0.25rem rgba(76, 76, 76, 0.3);
 }
 .otoc-panel {
-  padding: 0.75rem;
+  padding: 0.5rem 0.75rem 0.1rem 0.75rem;
   background: #fff;
 }
 .otoc-title-space {
@@ -488,8 +488,7 @@ p {
   color: #23bab5;
 }
 .otoc-list-body {
-  padding: 0.5rem 0;
-  /*width: calc(100% - 0.75rem)*/
+  /*padding:0.5rem 0; width: calc(100% - 0.75rem)*/
 }
 .otoc-list-body > div.otoc-list-row {
   padding-bottom: 0.5rem;
@@ -569,15 +568,64 @@ p {
   width: 95%;
 }
 .otoc-list-footer {
-  padding-top: 0.625rem;
   font-size: 0.7rem;
   color: #666;
   border-top: 1px solid #e6e6e6;
   display: flex;
   justify-content: space-between;
+  line-height: 1.75rem;
 }
 .otoc-list-heading + div[class=otoc-list-footer] {
   border-top: none !important;
+}
+.myCar-card {
+  height: 6rem;
+  background-color: #79aaf2;
+}
+.myCar-card div:nth-child(1) {
+  right: 0;
+  bottom: 0;
+  width: 10.5rem;
+  height: 2.5rem;
+  opacity: 0.2;
+}
+.otoc-list-project-overview-row {
+  line-height: 0.75rem;
+  font-size: 0.75rem;
+  border-bottom: 1px solid #e6e6e6;
+  clear: both;
+  margin-bottom: 0.5rem;
+}
+.otoc-list-project-overview-row:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+.otoc-list-project-overview-row div:nth-child(1) {
+  height: 1.35rem;
+}
+.otoc-list-project-overview-row div:nth-child(1) span:nth-child(1) {
+  float: left;
+  color: #333;
+}
+.otoc-list-project-overview-row div:nth-child(1) span:nth-child(2) {
+  float: right;
+  text-align: right;
+  color: #999999;
+  text-decoration: line-through;
+  font-size: 0.7rem;
+  line-height: 0.7rem;
+}
+.otoc-list-project-overview-row div:nth-child(2) {
+  height: 1.2rem;
+}
+.otoc-list-project-overview-row div:nth-child(2) span:nth-child(1) {
+  float: left;
+  font-size: 0.7rem;
+  color: #23bab5;
+}
+.otoc-list-project-overview-row div:nth-child(2) > span:nth-last-child(1) {
+  float: right;
+  text-align: right;
 }
 .banner-user {
   padding-top: 2rem;

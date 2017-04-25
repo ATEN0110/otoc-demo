@@ -1,7 +1,7 @@
 ////////////////////自定义公共组件 开始////////////////////
 
 ////[组件名称：面板等宽]
-   .otoc-panel{ padding: 0.75rem; background: #fff;}
+   .otoc-panel{padding: 0.5rem 0.75rem 0.1rem 0.75rem; background: #fff;}
     
 ////[组件名称：标题行]
    .otoc-title-space{ padding-left:0.75rem; height: 1.25rem; font-size:0.6rem; line-height:1.3rem;  color:@otoc-textcolor-666;}
@@ -10,7 +10,7 @@
 
     //列表heading  
     .otoc-list-heading,.otoc-list-heading-lg{ line-height: 0.75rem; font-size: 0.75rem; border-bottom: 1px solid @otoc-list-b-border; clear: both;}
-     
+ 
      //单行标题栏
     .otoc-list-heading{
          height: 1.5rem;
@@ -18,8 +18,7 @@
                 span:nth-child(1){ float: left; color: @otoc-textcolor-333;}
                 span:nth-child(2){ float: right; text-align: right; color:@otoc-textcolor-333;}  
              } 
-    }  
-   
+    }   
     //双行标题栏
     .otoc-list-heading-lg {
         div:nth-child(1){ 
@@ -32,9 +31,8 @@
                 span:nth-child(1){ float: left; .otoc-s14-cgreen  }
         } 
     }
- 
     //列表body
-    .otoc-list-body{ padding:0.5rem 0; /*width: calc(100% - 0.75rem)*/;}
+    .otoc-list-body{ /*padding:0.5rem 0; width: calc(100% - 0.75rem)*/;}
     .otoc-list-body > div.otoc-list-row{ padding-bottom: 0.5rem; height: 1.375rem; line-height: 1.375rem; }
     .otoc-list-body > div.otoc-list-row > div{ float: left; box-sizing: border-box; }
     
@@ -69,7 +67,7 @@
        
    
     //列表footer
-    .otoc-list-footer{ padding-top: 0.625rem; .otoc-s14-c666; border-top: 1px solid @otoc-list-b-border;display: flex;justify-content: space-between;}
+    .otoc-list-footer{ .otoc-s14-c666; border-top: 1px solid @otoc-list-b-border;display: flex;justify-content: space-between;line-height: 1.75rem;}
 //  .otoc-list-footer > span{ padding-right: 0.75rem;}
     
     
@@ -78,10 +76,43 @@
         border-top: none !important;
     }
    
-   
-   
-   
-   
-   
+   //[组件名称：my-car card高度 ]
+   .myCar-card{
+       height:6rem;
+       background-color: #79aaf2;
+       div:nth-child(1){
+          right: 0;
+          bottom: 0;
+          width: 10.5rem;
+          height: 2.5rem;
+          opacity: 0.2;
+      
+       }
+   }
+ 
+ //[组建名称：项目概况列表]
+
+ .otoc-list-project-overview-row{
+     line-height: 0.75rem; font-size: 0.75rem; border-bottom: 1px solid @otoc-list-b-border; clear: both;margin-bottom: 0.5rem;
+ }
+  .otoc-list-project-overview-row:last-child{
+     
+         border-bottom: none;
+         margin-bottom: 0;
+     
+ }
+ .otoc-list-project-overview-row{
+        div:nth-child(1){ 
+            height: 1.35rem;                                      //第一行
+                span:nth-child(1){ float: left; color: @otoc-textcolor-333;}
+                span:nth-child(2){ float: right; text-align: right;color:#999999;text-decoration: line-through;font-size: 0.7rem;line-height: 0.7rem;}
+        }  
+        div:nth-child(2){ 
+            height: 1.2rem;                                        //第二行
+                span:nth-child(1){ float: left; .otoc-s14-cgreen  }
+                > span:nth-last-child(1){ float: right; text-align: right; }
+        } 
+    }
+
 
 
