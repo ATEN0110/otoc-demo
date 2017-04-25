@@ -583,11 +583,29 @@ p {
   background-color: #79aaf2;
 }
 .myCar-card div:nth-child(1) {
-  right: 0;
-  bottom: 0;
+  right: 1%;
+  bottom: 1%;
   width: 10.5rem;
   height: 2.5rem;
   opacity: 0.2;
+}
+.myCar-card .otoc-car-num {
+  height: 1.75rem;
+  width: 6.5rem;
+  top: 1.1rem;
+  left: 1.25rem;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  color: #ffffff;
+  text-align: center;
+  border: 1px #ffffff solid;
+  border-radius: 0.2rem;
+}
+.myCar-card .otoc-car-type {
+  top: 4rem;
+  left: 1.25rem;
+  font-size: 0.75rem;
+  color: #FFFFFF;
 }
 .otoc-list-project-overview-row {
   line-height: 0.75rem;
