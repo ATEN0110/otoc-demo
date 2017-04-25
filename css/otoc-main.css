@@ -654,16 +654,13 @@ p {
   text-align: right;
 }
 .otoc-my-card {
+  display: flex;
+  justify-content: space-between;
   height: 6.25rem ;
-  padding: 0.75rem 0.75rem 0.65rem 0.75rem ;
+  padding: 1rem 0.75rem 0.65rem 0.75rem ;
   background-repeat: no-repeat;
   background-size: 100%;
   color: #FFFFFF;
-}
-.otoc-my-card > div:nth-child(1) {
-  display: flex;
-  justify-content: space-between;
-  font-size: 1rem;
 }
 .otoc-my-card > div:nth-last-child(1) {
   right: 0.75rem;
