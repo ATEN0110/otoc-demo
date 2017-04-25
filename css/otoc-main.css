@@ -146,6 +146,9 @@ p {
 .otoc-m-t-25 {
   margin-top: 1.25rem !important;
 }
+.otoc-m-t-30 {
+  margin-top: 1.5rem !important;
+}
 .otoc-p-l-7 {
   padding-left: 0.35rem !important;
 }
@@ -303,6 +306,10 @@ p {
 }
 .otoc-s14-cgreen {
   font-size: 0.7rem;
+  color: #23bab5;
+}
+.otoc-s15-cgreen {
+  font-size: 0.75rem;
   color: #23bab5;
 }
 .otoc-text-overflow {
@@ -602,9 +609,10 @@ p {
   border-radius: 0.2rem;
 }
 .myCar-card .otoc-car-type {
-  top: 4rem;
+  bottom: 1.17rem;
   left: 1.25rem;
   font-size: 0.75rem;
+  line-height: 0.8rem;
   color: #FFFFFF;
 }
 .otoc-list-project-overview-row {
@@ -644,6 +652,34 @@ p {
 .otoc-list-project-overview-row div:nth-child(2) > span:nth-last-child(1) {
   float: right;
   text-align: right;
+}
+.otoc-my-card {
+  height: 6.25rem ;
+  padding: 0.75rem 0.75rem 0.65rem 0.75rem ;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: #FFFFFF;
+}
+.otoc-my-card > div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+.otoc-my-card > div:nth-last-child(1) {
+  right: 0.75rem;
+  bottom: 0.65rem;
+  font-size: 0.75rem;
+}
+.otoc-my-savingCard {
+  border: 1px solid #42c9c4;
+  background-image: url(../img/saving-car-bg.png);
+}
+.otoc-my-offerCard {
+  background-image: url(../img/offer-car-bg.png);
+  border: 1px solid #d8a162;
+}
+.otoc-my-offerCard > div:nth-last-child(1) {
+  color: #D8A162;
 }
 .banner-user {
   padding-top: 2rem;
