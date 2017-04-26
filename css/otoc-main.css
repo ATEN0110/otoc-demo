@@ -806,12 +806,12 @@ p {
 .otoc-cardetails-card .otoc-use-store > div:nth-child(2) {
   display: flex;
   flex-direction: row;
+  align-items: center;
   margin-top: 0.5rem;
 }
 .otoc-cardetails-card .otoc-use-store > div:nth-child(2) > div:nth-child(1) {
   width: 3.75rem;
   height: 3.75rem;
-  background-color: #CCCCCC;
   margin-right: 1rem;
 }
 .otoc-cardetails-card .otoc-use-store > div:nth-child(2) > div:nth-child(1) img {
