@@ -89,6 +89,21 @@ p {
 .otoc-bindlist-martop {
   margin: 0.75rem 0 0 0;
 }
+.otoc-card-details .bar {
+  background-color: #42c9c5;
+}
+.otoc-card-details .bar .button-link {
+  color: #ffffff !important;
+}
+.otoc-card-details .bar h1 {
+  color: #ffffff !important;
+}
+.otoc-card-details .bar:after {
+  background-color: #42c9c5;
+}
+.page-group-whitebg {
+  background-color: #ffffff;
+}
 .clear {
   clear: both;
 }
@@ -97,6 +112,18 @@ p {
 }
 .otoc-p-a {
   position: absolute;
+}
+.otoc-m-t-5 {
+  margin-top: 0.25rem !important;
+}
+.otoc-m-b-5 {
+  margin-bottom: 0.25rem !important;
+}
+.otoc-m-l-5 {
+  margin-left: 0.25rem !important;
+}
+.otoc-m-r-5 {
+  margin-right: 0.25rem !important;
 }
 .otoc-m-10 {
   margin: 0.5rem !important;
@@ -296,9 +323,21 @@ p {
   font-size: 0.6rem;
   color: #666;
 }
+.otoc-s12-c999 {
+  font-size: 0.6rem;
+  color: #999;
+}
+.otoc-s13-c666 {
+  font-size: 0.65rem;
+  color: #666;
+}
 .otoc-s14-c666 {
   font-size: 0.7rem;
   color: #666;
+}
+.otoc-s14-c999 {
+  font-size: 0.7rem;
+  color: #999;
 }
 .otoc-s12-cgreen {
   font-size: 0.6rem;
@@ -311,6 +350,14 @@ p {
 .otoc-s15-cgreen {
   font-size: 0.75rem;
   color: #23bab5;
+}
+.otoc-s16-cgreen {
+  font-size: 0.8rem;
+  color: #23bab5;
+}
+.otoc-s16-c333 {
+  font-size: 0.85rem;
+  color: #333;
 }
 .otoc-text-overflow {
   white-space: nowrap;
@@ -331,6 +378,9 @@ p {
 }
 .otoc-lineheight-24 {
   line-height: 1.2rem;
+}
+.otoc-lineheight-30 {
+  line-height: 1.5rem;
 }
 .otoc-lineheight-80 {
   line-height: 4rem;
@@ -590,10 +640,10 @@ p {
   background-color: #79aaf2;
 }
 .myCar-card div:nth-child(1) {
-  right: 1%;
-  bottom: 1%;
-  width: 10.5rem;
-  height: 2.5rem;
+  right: 0;
+  bottom: 0;
+  max-width: 10.5rem;
+  max-height: 2.5rem;
   opacity: 0.2;
 }
 .myCar-card .otoc-car-num {
@@ -677,6 +727,95 @@ p {
 }
 .otoc-my-offerCard > div:nth-last-child(1) {
   color: #D8A162;
+}
+.otoc-card-details {
+  background-color: #42c9c5;
+}
+.otoc-cardetails-card {
+  padding: 0.55rem 0.75rem;
+}
+.otoc-cardetails-card > div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid #e6e6e6;
+}
+.otoc-cardetails-card > div:nth-child(1) span {
+  color: #999;
+}
+.otoc-cardetails-card > div:nth-child(1) a {
+  color: #0498e6;
+}
+.otoc-cardetails-card > div:nth-child(1) a span {
+  color: #0498e6;
+}
+.otoc-cardetails-card > div:nth-child(2) {
+  padding-bottom: 0.55rem;
+  border-bottom: 1px dashed #e6e6e6;
+}
+.otoc-cardetails-card > div:nth-child(2) .otoc-card-name {
+  font-size: 0.85rem;
+  line-height: 2.45rem;
+  color: #333;
+}
+.otoc-cardetails-card > div:nth-child(2) > div:nth-child(2) {
+  font-size: 0.8rem;
+  color: #666;
+}
+.otoc-cardetails-card > div:nth-child(2) > div:nth-child(3) {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7rem;
+  line-height: 1.35rem;
+  color: #999;
+}
+.otoc-cardetails-card > div:nth-child(2) .otoc-semicircle {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background-color: #42c9c5;
+}
+.otoc-cardetails-card > div:nth-child(2) .otoc-semicircle-left {
+  bottom: -0.4rem;
+  left: -1.1rem;
+}
+.otoc-cardetails-card > div:nth-child(2) .otoc-semicircle-right {
+  bottom: -0.4rem;
+  right: -1.1rem;
+}
+.otoc-cardetails-card > div:nth-child(3) > div:nth-child(1) {
+  line-height: 2rem;
+  color: #666;
+}
+.otoc-cardetails-card > div:nth-child(3) .otoc-disinfor-container {
+  padding: 0.5rem 0.5rem 0.375rem 0.5rem;
+  margin-bottom: 0.625rem;
+  border: 1px solid #42c9c5;
+  border-radius: 0.2rem;
+}
+.otoc-cardetails-card > div:nth-child(3) .otoc-disinfor-container > div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.55rem;
+  color: #999;
+}
+.otoc-cardetails-card > div:nth-child(3) .otoc-item-name {
+  margin-bottom: 0.4rem;
+}
+.otoc-cardetails-card .otoc-use-store > div:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0.5rem;
+}
+.otoc-cardetails-card .otoc-use-store > div:nth-child(2) > div:nth-child(1) {
+  width: 3.75rem;
+  height: 3.75rem;
+  background-color: #CCCCCC;
+  margin-right: 1rem;
+}
+.otoc-cardetails-card .otoc-use-store > div:nth-child(2) > div:nth-child(1) img {
+  width: 100%;
 }
 .banner-user {
   padding-top: 2rem;
