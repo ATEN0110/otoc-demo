@@ -351,13 +351,21 @@ p {
   font-size: 0.75rem;
   color: #23bab5;
 }
+.otoc-s15-c999 {
+  font-size: 0.75rem;
+  color: #999;
+}
 .otoc-s16-cgreen {
   font-size: 0.8rem;
   color: #23bab5;
 }
-.otoc-s16-c333 {
-  font-size: 0.85rem;
-  color: #333;
+.otoc-s16-cgreen {
+  font-size: 0.8rem;
+  color: #23bab5;
+}
+.otoc-s20-cgreen {
+  font-size: 1rem;
+  color: #23bab5;
 }
 .otoc-text-overflow {
   white-space: nowrap;
@@ -817,6 +825,40 @@ p {
 }
 .otoc-cardetails-card .otoc-use-store > div:nth-child(2) > div:nth-child(1) img {
   width: 100%;
+}
+.otoc-cardUsed-details .otoc-consumption {
+  display: flex;
+  justify-content: space-between;
+  line-height: 2.75rem;
+  border-bottom: 1px dashed #999999;
+}
+.otoc-cardUsed-details .list-block ul:before,
+.otoc-cardUsed-details ul:after {
+  height: 0;
+}
+.otoc-cardUsed-details li {
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.5rem;
+  font-size: 0.75rem;
+}
+.otoc-cardUsed-details li > span:nth-child(1) {
+  color: #999999;
+}
+.otoc-cardUsed-details li > span:nth-child(2) {
+  color: #666666;
+}
+.otoc-cardOffer-details .otoc-offeritem-name {
+  line-height: 2.8rem;
+  border-bottom: 1px dashed #999999;
+}
+.otoc-cardOffer-details .list-block ul:before,
+.otoc-cardOffer-details ul:after {
+  height: 0;
+}
+.otoc-cardOffer-details li {
+  line-height: 1.3rem;
+  color: #666666;
 }
 .banner-user {
   padding-top: 2rem;

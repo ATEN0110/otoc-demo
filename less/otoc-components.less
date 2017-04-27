@@ -148,7 +148,7 @@
  }
  //[组建名称：卡详情]
  .otoc-card-details{
-     background-color: #42c9c5;
+    background-color: #42c9c5;
  }
 
 
@@ -212,3 +212,34 @@
     
     
 }
+//[组建名称：卡的使用情况]
+.otoc-cardUsed-details{
+    .otoc-consumption{
+        display: flex; justify-content: space-between; line-height: 2.75rem; border-bottom: 1px dashed #999999;
+    }
+    .list-block ul:before,ul:after{
+        height:0;
+    }
+    li{
+        display: flex; justify-content: space-between; line-height: 1.5rem; font-size: 0.75rem;
+        > span:nth-child(1){
+            color: #999999;
+        }
+        > span:nth-child(2){
+            color: #666666;
+        }
+    }
+}
+//[组建名称：优惠政策明细]
+.otoc-cardOffer-details{
+   .otoc-offeritem-name{
+        line-height: 2.8rem; border-bottom: 1px dashed #999999;
+    } 
+    .list-block ul:before,ul:after{
+        height:0;
+    }
+    li{
+        line-height: 1.3rem; color: #666666;
+    }
+}
+
