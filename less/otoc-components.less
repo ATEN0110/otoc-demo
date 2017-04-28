@@ -121,31 +121,35 @@
 
  //[组建名称：我的卡card]
  .otoc-my-card{
-     display: flex;
-     justify-content: space-between;
      height:6.25rem ; 
-     padding:1rem 0.75rem 0.65rem 0.75rem ;
-     background-repeat: no-repeat;
-     background-size: 100%; 
      color: #FFFFFF;
-   
-     > div:nth-last-child(1){
-         right: 0.75rem;
-         bottom:0.65rem;
-         font-size: 0.75rem;
-     }
+    .otoc-myCard-container{
+        display: flex;
+        justify-content: space-between;
+        padding: 1.325rem 1.25rem 0 1.25rem;
+        height: 65%;
+        background-size: 100% 100%;    
+    }
  }
  .otoc-my-savingCard{
      border:1px solid #42c9c4;
+ }
+ .otoc-my-savingCard-bg{
      background-image: url(../img/saving-car-bg.png);
  }
  .otoc-my-offerCard{
-     background-image: url(../img/offer-car-bg.png);
      border:1px solid #d8a162;
      > div:nth-last-child(1){
          color: #D8A162;
      }
  }
+ .otoc-my-offerCard-bg{
+    background-image: url(../img/offer-car-bg.png); 
+ }
+ .otoc-card-type{
+     width:100%;padding-right: 1.25rem;font-size:0.75rem;line-height:2.5rem; text-align: right;
+ }
+  
  //[组建名称：卡详情]
  .otoc-card-details{
     background-color: #42c9c5;
@@ -191,8 +195,11 @@
         }
         .otoc-disinfor-container{
             display:block;padding:0.5rem 0.5rem 0.375rem 0.5rem;margin-bottom:0.625rem;border:1px solid #42c9c5;border-radius: 0.2rem;
+            div{
+                display: flex;justify-content: space-between;align-items:baseline;
+            }
             > div:nth-child(2){
-                display: flex;justify-content: space-between;font-size:0.55rem;color: @otoc-textcolor-999;
+                font-size:0.55rem;color: @otoc-textcolor-999;
             }
         }
         .otoc-item-name{
