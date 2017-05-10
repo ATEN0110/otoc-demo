@@ -173,6 +173,9 @@ p {
 .otoc-m-t-25 {
   margin-top: 1.25rem !important;
 }
+.otoc-m-l-25 {
+  margin-left: 1.25rem !important;
+}
 .otoc-m-t-30 {
   margin-top: 1.5rem !important;
 }
@@ -355,6 +358,10 @@ p {
   font-size: 0.75rem;
   color: #999;
 }
+.otoc-s15-c333 {
+  font-size: 0.75rem;
+  color: #333;
+}
 .otoc-s16-cgreen {
   font-size: 0.8rem;
   color: #23bab5;
@@ -436,6 +443,9 @@ p {
 }
 .otoc-border-b-100 {
   border-bottom: 1px solid #23bab5;
+}
+.otoc-border-b-ec {
+  border-bottom: 1px solid #ececec;
 }
 .otoc-bg-white {
   background: #ffffff;
@@ -877,6 +887,28 @@ p {
 .otoc-cardOffer-details li {
   line-height: 1.3rem;
   color: #666666;
+}
+.mall-card-content .banner-container {
+  height: 8.75rem ;
+  background-color: #23BAB5 ;
+}
+.mall-card-content .mall-card-list .mall-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.75rem 1.25rem;
+}
+.mall-card-content .mall-card-saving .saving-icon {
+  width: 3rem;
+  height: 3rem;
+  background: url(../img/saving-card-icon.png) no-repeat;
+  background-size: 100% ;
+}
+.mall-card-content .mall-card-offer .offer-icon {
+  width: 3rem;
+  height: 3rem;
+  background: url(../img/offer-card-icon.png) no-repeat;
+  background-size: 100%;
 }
 .banner-user {
   padding-top: 2rem;
