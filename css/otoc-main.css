@@ -955,9 +955,65 @@ p {
 .page-group .bar-tab:before {
   height: 0;
 }
+.personal-data-list ul {
+  width: 80%;
+  margin: auto;
+  background: none;
+}
+.personal-data-list ul .item-inner:after {
+  height: 0;
+}
+.personal-data-list ul .item-inner {
+  padding-right: 0rem !important;
+}
+.personal-data-list ul .item-title.label {
+  color: #666666;
+  font-size: 0.75rem;
+  width: 15%;
+}
+.personal-data-list ul .item-title {
+  padding-left: 0rem !important;
+}
+.personal-data-list ul .item-input {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  color: #cccccc;
+}
+.personal-data-list ul .item-input ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #cccccc;
+  font-size: 0.7rem;
+}
+.personal-data-list ul .item-input :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #cccccc;
+  font-size: 0.7rem;
+}
+.personal-data-list ul .item-input ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #cccccc;
+  font-size: 0.7rem;
+}
+.personal-data-list ul .item-input :-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #cccccc;
+  font-size: 0.7rem;
+}
+.personal-data-list ul li input[type="text"] {
+  height: 1.75rem;
+  background: #FFFFFF;
+  border: 1px solid #cccccc;
+  border-radius: 0.2rem ;
+  font-size: 0.7rem;
+  color: #333333;
+}
+.personal-data-list ul:before,
+.personal-data-list ul:after {
+  height: 0;
+}
 .banner-user {
   padding-top: 2rem;
-  height: 10.7rem;
+  height: 9.7rem;
 }
 .banner-user .user {
   margin: 0 auto;

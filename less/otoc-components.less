@@ -304,3 +304,47 @@
  .page-group .bar-tab:before{
       height: 0;
   }
+
+ //[组建名称：个人资料-表单]
+ 
+.personal-data-list{
+    ul{
+        width:80%; margin:auto;background:none;   
+        .item-inner:after{
+            height: 0;
+        }
+        .item-inner{
+           padding-right: 0rem !important;
+        }
+        .item-title.label{
+            color: #666666; font-size: 0.75rem; width:15%;
+        }
+        .item-title{
+            padding-left: 0rem !important;
+        }
+        .item-input{
+            margin-top: 0rem; margin-bottom: 0rem; color: #cccccc;
+            ::-webkit-input-placeholder{  /* WebKit browsers */  
+                color: #cccccc; font-size: 0.7rem;
+            }
+             :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+                color: #cccccc; font-size: 0.7rem;
+            }
+            ::-moz-placeholder {/* Mozilla Firefox 19+ */
+                color: #cccccc; font-size: 0.7rem;
+            }
+            :-ms-input-placeholder { /* Internet Explorer 10+ */
+                 color: #cccccc; font-size: 0.7rem;
+            } 
+        }
+        li{
+            input[type="text"]{
+               height:1.75rem; background: #FFFFFF; border:1px solid #cccccc; border-radius:0.2rem ;  font-size: 0.7rem; color: #333333;
+            }
+        }
+    }
+        
+    ul:before,ul:after{
+        height: 0;
+    }
+}

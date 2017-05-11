@@ -25,48 +25,88 @@
 		    </a>
 		    <h1 class="title">个人资料</h1>
 		  </header>
-			<div class="content native-scroll">
-				<div class="content-block-title">省市区</div>
-				<div class="content-block">
-					<div class="list-block">
-						<ul>
-							<!-- Text inputs -->
-							<li>
-								<div class="item-content">
-									<div class="item-inner">
-										<div class="item-title label">收货地址</div>
-										<div class="item-input">
-											<input type="text" placeholder="" id="city-picker" value="四川 内江 东兴区" readonly="">
-										</div>
+			<div class="content ">
+				<!--头像和手机号  开始-->
+		    <div class="banner-user">
+		    	<div class="user">
+		    		 <img src="upload/user.png" width="100%" height="100%"/>
+		    	</div>
+		    	<div class="name">
+		    		18217115510 
+		    	</div>
+		    </div>
+		    <!--头像和手机号   结束-->
+		   
+		   	<!--个人资料表单  开始-->
+				<div class="list-block personal-data-list">
+					<ul>
+						<!-- Text inputs -->
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title label">姓名</div>
+									<div class="item-input">
+										<input type="text" placeholder="请输入姓名">
 									</div>
 								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="content-block">
-					<div class="list-block">
-						<ul>
-							<!-- Text inputs -->
-							<li>
-								<div class="item-content">
-									<div class="item-inner">
-										<div class="item-title label">性别</div>
-										<div class="item-input">
-											<input type="text" placeholder="" id='picker'value="保密" >
-										</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title label">性别</div>
+									<div class="item-input">
+										<input type="text" id="sex-picker" placeholder="请选择性别">
 									</div>
 								</div>
-							</li>
-						</ul>
-					</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title label">生日</div>
+									<div class="item-input">
+										<input type="text" id="birthday" placeholder="请选择生日">
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title label">地址</div>
+									<div class="item-input">
+										<input type="text" id='city-picker' placeholder="请选择所在的省市区县">
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title label"></div>
+									<div class="item-input">
+										<input type="text" placeholder="请填写详细地址">
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
 				</div>
+		   
+		   <!--个人资料表单  结束-->
+		    
+				 <!--底部按钮  开始-->
+			<footer class="bar bar-tab mall-card-details-btn">
+				<a style="width:70%"></a>
+				<a href="personal-data.html">提交</span></a>
+			</footer>
+			<!--底部按钮  结束-->
 		
 			
 				
 				
-			</div>
-			
+
 			
 			
 			
@@ -89,14 +129,8 @@
 	<!--OTOC 开始-->
 <link rel="stylesheet" href="css/otoc-main.css" />
 <script>
-  $("#city-picker").cityPicker({
-    toolbarTemplate: '<header class="bar bar-nav">\
-    <button class="button button-link pull-right close-picker">确定</button>\
-    <h1 class="title">选择收货地址</h1>\
-    </header>'
-  });
-  
-  $("#picker").picker({
+  //性别选择
+  $("#sex-picker").picker({
 					toolbarTemplate: '<header class="bar bar-nav">\
 			  <button class="button button-link pull-left"></button>\
 			  <button class="button button-link pull-right close-picker">确定</button>\
@@ -106,7 +140,20 @@
 						textAlign: 'center',
 						values: ['男', '女', '保密']
 					}]
-				});
+	});
+	//默认生日日期
+  $("#birthday").calendar({
+    value: ['1990-01-01']
+	});
+	
+	//选择省市区县
+	$("#city-picker").cityPicker({
+		toolbarTemplate: '<header class="bar bar-nav">\
+	    <button class="button button-link pull-right close-picker">确定</button>\
+	    <h1 class="title">请选择所在的省市区县</h1>\
+	    </header>'
+	});
+	
 </script>		
 
 <!--OTOC 结束-->
