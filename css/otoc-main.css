@@ -952,8 +952,8 @@ p {
 .mall-card-details-btn > a:nth-child(2) {
   background-color: #ee3333;
 }
-.mall-card-details-btn:before {
-  background-color: none !important;
+.page-group .bar-tab:before {
+  height: 0;
 }
 .banner-user {
   padding-top: 2rem;
