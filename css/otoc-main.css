@@ -404,6 +404,9 @@ p {
 .otoc-lineheight-40 {
   line-height: 2rem;
 }
+.otoc-lineheight-60 {
+  line-height: 3rem;
+}
 .otoc-lineheight-80 {
   line-height: 4rem;
 }
@@ -777,7 +780,7 @@ p {
   display: flex;
   justify-content: space-between;
   font-size: 0.75rem;
-  padding-bottom: 0.6rem;
+  padding-bottom: 0.4rem;
   border-bottom: 1px solid #e6e6e6;
 }
 .otoc-cardetails-card > div:nth-child(1) span {
@@ -900,6 +903,7 @@ p {
 .mall-card-content .mall-card-list .mall-card {
   display: flex;
   flex-direction: row ;
+  align-items: center;
   padding: 0.75rem 1.25rem;
 }
 .mall-card-content .mall-card-list .mall-card > div:nth-child(2) {
@@ -912,6 +916,41 @@ p {
 .mall-card-content .mall-card-saving .saving-icon {
   width: 3rem;
   height: 3rem;
+}
+.mall-card-details-content .mall-card-details .mall-card-name {
+  font-size: 0.85rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+.mall-card-details-content .mall-card-details .otoc-card-type {
+  font-size: 0.75rem;
+  text-align: left;
+  line-height: 1.5rem;
+  color: #666;
+}
+.mall-card-details-content .mall-card-details .mall-card-sum {
+  margin-bottom: 0.4rem;
+}
+.mall-card-details-btn {
+  background-color: none;
+  display: flex;
+  flex-direction: row ;
+  text-align: center;
+}
+.mall-card-details-btn > a {
+  width: 50%;
+  color: #ffffff;
+  font-size: 0.75rem;
+  padding-top: 0.7rem;
+}
+.mall-card-details-btn > a:nth-child(1) {
+  background-color: #000000;
+}
+.mall-card-details-btn > a:nth-child(2) {
+  background-color: #ee3333;
+}
+.mall-card-details-btn:before {
+  background-color: none !important;
 }
 .banner-user {
   padding-top: 2rem;
