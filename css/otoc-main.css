@@ -917,6 +917,9 @@ p {
   width: 3rem;
   height: 3rem;
 }
+.mall-card-details-content {
+  margin-bottom: 2.5rem;
+}
 .mall-card-details-content .mall-card-details .mall-card-name {
   font-size: 0.85rem;
   color: #333;
