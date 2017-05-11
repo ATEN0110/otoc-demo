@@ -955,8 +955,11 @@ p {
 .page-group .bar-tab:before {
   height: 0;
 }
+.personal-data-list {
+  margin-bottom: 2.25rem;
+}
 .personal-data-list ul {
-  width: 80%;
+  width: 90%;
   margin: auto;
   background: none;
 }
