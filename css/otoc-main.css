@@ -926,7 +926,7 @@ p {
   margin-bottom: 0.5rem;
 }
 .mall-card-details-content .mall-card-details .otoc-card-type {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   text-align: left;
   line-height: 1.5rem;
   color: #666;
@@ -943,7 +943,7 @@ p {
 .mall-card-details-btn > a {
   width: 50%;
   color: #ffffff;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   padding-top: 0.7rem;
 }
 .mall-card-details-btn > a:nth-child(1) {
