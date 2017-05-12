@@ -162,11 +162,12 @@
 	var oHeight = $(window).height(); //浏览器当前的高度
 	$(window).resize(function() {
  		if($(window).height() < oHeight) {
- 			console.log(-2.5);
- 			$(".bar-tab").css("bottom", "-2.5rem !important");
+ 			$("footer").hide();
+			console.log(-2.5);   
  		} if($(window).height() = oHeight) {
- 			console.log(0);
- 			$(".bar-tab").css("bottom", "0 !important");
+ 			$("footer").show();
+			console.log(0);
+			$("footer").css("display", "flex");
  		}
 
 	});
