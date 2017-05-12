@@ -148,9 +148,9 @@
 	    </header>'
 	});
 
-	var oHeight = $(window).height(); //浏览器当前的高度
+	var oHeight = $(document.body).height(); //浏览器当前的高度
 	$(window).resize(function() {
-		if($(document).height() < oHeight) {
+		if($(document.body).height() < oHeight) {
 			console.log(-2.5);
 			$(".bar-tab").css("bottom", "-2.5rem !important");
 		} else {
