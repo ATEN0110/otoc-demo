@@ -153,10 +153,10 @@
 	$(window).resize(function() {
 
 		if($(document).height() < oHeight) {
-			$("footer").hide();
+			$(".bar-tab").css("bottom", "-2.5rem");
 		} else {
 
-			$("footer").show();
+			$(".bar-tab").css("bottom", "0");
 		}
 
 	});
