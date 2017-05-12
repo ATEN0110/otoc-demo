@@ -76,7 +76,7 @@
 								<div class="item-inner">
 									<div class="item-title label">车牌号</div>
 									<div class="item-input">
-										<input type="text" id="birthday" placeholder="请选择生日">
+										<input type="text"  placeholder="请输入车牌号">
 									</div>
 								</div>
 							</div>
@@ -95,7 +95,7 @@
 						<li>
 							<div class="item-content">
 								<div class="item-inner">
-									<div class="item-title label">123</div>
+									<div class="item-title label"></div>
 									<div class="item-input">
 										<input type="text" placeholder="请填写详细地址">
 									</div>
@@ -163,26 +163,13 @@
 	$(window).resize(function() {
  		if($(document.body).height() < oHeight) {
  			$("footer").hide();
-			console.log(-2.5);   
  		} else {
  			$("footer").show();
 			console.log(0);
 			$("footer").css("display", "flex");
  		}
-
 	});
-/*		$("input").focus(function(){
-			$("footer").hide();
-			console.log(-2.5);                                
-				$(".bar-tab").css("bottom", "-2.5rem !important");
-				console.log("获取到焦点");
-		});
-		$("input").blur(function(){
-			$("footer").show();
-		console.log(0);
-		$("footer").css("display", "flex");
-				console.log("失去到焦点");
-		});*/
+
 </script>		
 
 <!--OTOC 结束-->
