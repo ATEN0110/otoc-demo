@@ -158,7 +158,8 @@
 	    <h1 class="title">请选择所在的省市区县</h1>\
 	    </header>'
 	});
-
+	
+	//解决安卓端按钮悬浮输入法之上的问题
 	var oHeight = $(document.body).height(); //浏览器当前的高度
 	$(window).resize(function() {
  		if($(document.body).height() < oHeight) {
