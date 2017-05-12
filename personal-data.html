@@ -149,16 +149,30 @@
 	});
 
 	var oHeight = $(document.body).height(); //浏览器当前的高度
-	$(window).resize(function() {
-		if($(document.body).height() < oHeight) {
-			console.log(-2.5);
+//	$(window).resize(function() {
+////		if($(document.body).height() < oHeight) {
+////			console.log(-2.5);
+////			$(".bar-tab").css("bottom", "-2.5rem !important");
+////		} if($(document.body).height() = oHeight) {
+////			console.log(0);
+////			$(".bar-tab").css("bottom", "0");
+////		}
+//		
+//
+//
+//	});
+		$("input").focus(function(){
+//			$("footer").hide();
+			console.log(-2.5);                                
 			$(".bar-tab").css("bottom", "-2.5rem !important");
-		} if($(document.body).height() = oHeight) {
-			console.log(0);
-			$(".bar-tab").css("bottom", "0");
-		}
-
-	});
+			console.log("获取到焦点");
+		});
+		$("input").blur(function(){
+//			$("footer").show();
+		console.log(0);
+		$(".bar-tab").css("bottom", "0 !important");
+			console.log("失去到焦点");
+		});
 </script>		
 
 <!--OTOC 结束-->
