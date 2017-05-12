@@ -150,11 +150,11 @@
 
 	var oHeight = $(window).height(); //浏览器当前的高度
 	$(window).resize(function() {
-		console.log(oHeight);
 		if($(document).height() < oHeight) {
-			$(".bar-tab").css("bottom", "-2.5rem");
+			console.log(-2.5);
+			$(".bar-tab").css("bottom", "-2.5rem !important");
 		} else {
-
+			console.log(0);
 			$(".bar-tab").css("bottom", "0");
 		}
 
