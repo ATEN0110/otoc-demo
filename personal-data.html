@@ -153,11 +153,10 @@
 	$(window).resize(function() {
 
 		if($(document).height() < oHeight) {
-
-			$(".mall-card-details-btn").css("position", "static");
+			$(".mall-card-details-btn").hide();
 		} else {
 
-			$(".mall-card-details-btn").css("position", "absolute");
+			$(".mall-card-details-btn").show();
 		}
 
 	});
