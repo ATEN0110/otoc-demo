@@ -147,7 +147,19 @@
 	    <h1 class="title">请选择所在的省市区县</h1>\
 	    </header>'
 	});
-	
-</script>		
+
+	var oHeight = $(document).height(); //浏览器当前的高度
+
+	$(window).resize(function() {
+
+		if($(document).height() < oHeight) {
+
+			$("#footer").css("position", "static");
+		} else {
+
+			$("#footer").css("position", "absolute");
+		}
+
+	});</script>		
 
 <!--OTOC 结束-->
