@@ -148,10 +148,9 @@
 	    </header>'
 	});
 
-	var oHeight = $(document).height(); //浏览器当前的高度
-
+	var oHeight = $(window).height(); //浏览器当前的高度
 	$(window).resize(function() {
-
+		console.log(oHeight);
 		if($(document).height() < oHeight) {
 			$(".bar-tab").css("bottom", "-2.5rem");
 		} else {
