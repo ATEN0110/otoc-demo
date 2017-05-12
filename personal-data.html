@@ -95,7 +95,7 @@
 						<li>
 							<div class="item-content">
 								<div class="item-inner">
-									<div class="item-title label"></div>
+									<div class="item-title label">123</div>
 									<div class="item-input">
 										<input type="text" placeholder="请填写详细地址">
 									</div>
@@ -159,12 +159,12 @@
 	    </header>'
 	});
 
-	var oHeight = $(window).height(); //浏览器当前的高度
+	var oHeight = $(document.body).height(); //浏览器当前的高度
 	$(window).resize(function() {
- 		if($(window).height() < oHeight) {
+ 		if($(document.body).height() < oHeight) {
  			$("footer").hide();
 			console.log(-2.5);   
- 		} if($(window).height() = oHeight) {
+ 		} else {
  			$("footer").show();
 			console.log(0);
 			$("footer").css("display", "flex");
