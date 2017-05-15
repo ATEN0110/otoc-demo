@@ -1078,6 +1078,24 @@ p {
   border: none;
   margin-bottom: 1.625rem ;
 }
+.mall-pay-finished .wechat-icon-container {
+  display: block;
+  width: 2.55rem;
+  margin: auto;
+  padding-top: 1.75rem;
+}
+.mall-pay-finished > p:nth-last-child(1) {
+  color: #1c1b20;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.mall-pay-finished .row {
+  margin-top: 8rem;
+}
+.mall-pay-finished .row .button {
+  border: 1px solid #23BAB5;
+  color: #23BAB5  ;
+}
 .banner-user {
   padding-top: 2rem;
   height: 9.7rem;
