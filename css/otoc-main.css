@@ -1014,6 +1014,70 @@ p {
 .personal-data-list ul:after {
   height: 0;
 }
+.mall-pay-content p:nth-child(1) {
+  padding-top: 1.5rem;
+  text-align: center;
+  font-size: 0.7rem;
+}
+.mall-pay-content p:nth-child(2) {
+  padding: 0.5rem 0 1.25rem 0;
+  margin: 0 0.75rem;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border-bottom: 1px dashed #cccccc;
+}
+.mall-pay-content ul:before,
+.mall-pay-content ul:after {
+  height: 0;
+}
+.mall-pay-content .pay-method ul {
+  margin: 0.75rem;
+}
+.mall-pay-content .pay-method .radio {
+  display: flex;
+  justify-content: space-between;
+}
+.mall-pay-content .pay-method .radio span {
+  font-size: 0.75rem;
+  color: #666666;
+  line-height: 1rem;
+}
+.mall-pay-content .pay-method .radio span img {
+  display: inline-block;
+  width: 1rem;
+  height: 0.85rem;
+  margin-right: 0.5rem;
+  vertical-align: text-bottom;
+}
+.mall-pay-content .pay-method .radio input {
+  display: none;
+}
+.mall-pay-content .pay-method .radio .radio + label {
+  width: 1.2rem;
+  height: 1.2rem;
+  border: 2px solid #cccccc;
+  padding: 9px;
+  border-radius: 50px;
+  display: inline-block;
+  position: relative;
+}
+.mall-pay-content .pay-method .radio .radio:checked + label:after {
+  content: ' ';
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.4rem;
+  background: #23bab5;
+  left: 50%;
+  margin-left: -0.4rem;
+}
+.mall-pay-content .button {
+  border: none;
+  margin-bottom: 1.625rem ;
+}
 .banner-user {
   padding-top: 2rem;
   height: 9.7rem;

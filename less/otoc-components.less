@@ -306,7 +306,6 @@
   }
 
  //[组建名称：个人资料-表单]
- 
 .personal-data-list{
     margin-bottom: 3.5rem;
     ul{
@@ -349,4 +348,61 @@
         height: 0;
     }
     
+}
+
+ //[组建名称：支付中心]
+.mall-pay-content{
+    p:nth-child(1){
+        padding-top: 1.5rem; text-align: center; font-size: 0.7rem;
+    }
+    p:nth-child(2){
+        padding: 0.5rem 0 1.25rem 0; margin: 0 0.75rem; text-align: center; font-size: 1.25rem; font-weight: bold; border-bottom: 1px dashed #cccccc; 
+    }
+    ul:before,ul:after{
+        height: 0;
+    }
+    .pay-method{
+        ul{
+             margin: 0.75rem;
+        }
+        .radio{
+            display:flex; justify-content: space-between;
+            span{ 
+                font-size:0.75rem; color: #666666; line-height: 1rem;
+                img{
+                   display:inline-block; width: 1rem; height: 0.85rem; margin-right: 0.5rem; vertical-align:text-bottom ;
+                }  
+            }
+            input{
+                display: none;
+            }
+            .radio+label {
+                width: 1.2rem; height: 1.2rem;
+                border: 2px solid #cccccc;
+                padding: 9px;
+                border-radius: 50px;
+                display: inline-block;
+                position: relative;
+            }
+             .radio:checked+label:after {
+                content: ' ';
+                width: 0.8rem;
+                height: 0.8rem;
+                border-radius: 50%;
+                position: absolute;
+                top: 50%;
+                margin-top: -0.4rem;
+                background: #23bab5;
+                left: 50%;
+                margin-left: -0.4rem;
+               
+            }
+            
+        
+        }
+            
+    }
+    .button{
+        border:none; margin-bottom: 1.625rem ;
+    }
 }
