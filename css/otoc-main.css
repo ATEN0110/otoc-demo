@@ -1097,6 +1097,16 @@ p {
   border: 1px solid #23BAB5;
   color: #23BAB5  ;
 }
+.mall-pay-abnormal i {
+  display: block;
+  padding-top: 2rem;
+  margin: auto;
+  font-size: 6rem;
+  color: #eb3416;
+}
+.mall-pay-abnormal .button {
+  background-color: #23bab5;
+}
 .banner-user {
   padding-top: 2rem;
   height: 9.7rem;
