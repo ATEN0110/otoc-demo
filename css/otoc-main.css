@@ -849,19 +849,22 @@ p {
 .otoc-cardetails-card > div:nth-child(3) .otoc-item-name {
   margin-bottom: 0.4rem;
 }
-.otoc-cardetails-card .otoc-use-store > div:nth-child(2) {
+.otoc-cardetails-card .otoc-use-store .otoc-store-list {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-top: 0.5rem;
 }
-.otoc-cardetails-card .otoc-use-store > div:nth-child(2) > div:nth-child(1) {
+.otoc-cardetails-card .otoc-use-store .otoc-store-list > div:nth-child(1) {
   width: 3.75rem;
   height: 3.75rem;
   margin-right: 1rem;
 }
-.otoc-cardetails-card .otoc-use-store > div:nth-child(2) > div:nth-child(1) img {
+.otoc-cardetails-card .otoc-use-store .otoc-store-list > div:nth-child(1) img {
   width: 100%;
+}
+.otoc-cardetails-card .otoc-use-store .otoc-store-list .otoc-store-info {
+  width: 70%;
 }
 .otoc-cardUsed-details .otoc-consumption {
   display: flex;

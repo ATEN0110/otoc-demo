@@ -169,7 +169,26 @@
 			$("footer").css("display", "flex");
  		}
 	});
+	
+	//判断日期
 
-</script>		
+	//判断时间断8：00~22：00
+	var ar = ['13:00', '22:00'];
+	function checkTime(ar) {
+		var d = new Date();
+		var current = parseInt(d.getHours()) * 60 + parseInt(d.getMinutes());
+		var ar_begin = ar[0].split(':');
+		var ar_end = ar[1].split(':');
+		var b = parseInt(ar_begin[0]) * 60 + parseInt(ar_begin[1]);
+		var e = parseInt(ar_end[0]) * 60 + parseInt(ar_end[1]);
+		if(current >= b && current <= e) {
+			$(".page").hide();
+			$(".page-group").html("活动已结束");
+			return true;
+		}
+		else return false;
+	}
+	alert(checkTime(ar));
+</script>	
 
 <!--OTOC 结束-->
