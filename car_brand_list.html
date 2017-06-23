@@ -1,0 +1,1535 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>我的车辆</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="css/car.css" />
+	</head>
+
+	<body>
+		<div class="page-group">
+			<div class="page page-current">
+				 <header class="bar bar-nav bar-white">
+					
+				  <div class="searchbar">
+				    <a class="searchbar-cancel" id="searchBtn">搜索</a>
+				    <div class="search-input">
+				      <label class="icon icon-search" for="search"></label>
+				      <input type="search" id='search' placeholder='输入关键字...'/>
+				    </div>
+				  </div>
+				
+				</header>
+				<div class="content otoc-bg-white otoc-m-t-10">
+					 <div id="seach-container">
+		                <ul class="car-list">
+		
+		                </ul>
+		            </div>
+					<div id="list">				
+						<div class="brand-key">
+							A
+						</div>
+						<ul class="car-list car-brand">
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(62)">
+					
+									<img src="http://brandpic.oss-cn-hangzhou.aliyuncs.com/car_brand-1a5f1659-2ed6-4b23-94a2-8733c73e4cde" />
+									<span class="brand-name">奥迪</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(66)">
+					
+									<img src="http://brandpic.oss-cn-hangzhou.aliyuncs.com/car_brand-23ac8adf-91e2-40ef-84d8-4469cf1bde8b" />
+									<span class="brand-name">安驰</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(144)">
+					
+									<img src="http://brandpic.oss-cn-hangzhou.aliyuncs.com/car_brand-92dd324a-f33c-452b-94fc-9de0253ddccb" />
+									<span class="brand-name">阿斯顿马丁</span>
+								</a>
+							</li>
+					
+						</ul>
+						<div class="gray-div" style="width:100%;height:10px; background-color: #efeff4"></div>
+						<div class="brand-key">
+							B
+						</div>
+						<ul class="car-list car-brand">
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(28)">
+					
+									<img src="" />
+									<span class="brand-name">保时捷</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(34)">
+					
+									<img src="" />
+									<span class="brand-name">别克</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(37)">
+					
+									<img src="" />
+									<span class="brand-name">北京</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(38)">
+					
+									<img src="" />
+									<span class="brand-name">北汽</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(60)">
+					
+									<img src="" />
+									<span class="brand-name">奔腾</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(61)">
+					
+									<img src="" />
+									<span class="brand-name">奔驰</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(67)">
+					
+									<img src="" />
+									<span class="brand-name">宝沃</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(68)">
+					
+									<img src="" />
+									<span class="brand-name">宝马</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(69)">
+					
+									<img src="" />
+									<span class="brand-name">宝骏</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(70)">
+					
+									<img src="" />
+									<span class="brand-name">宝龙</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(71)">
+					
+									<img src="" />
+									<span class="brand-name">宾利</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(73)">
+					
+									<img src="" />
+									<span class="brand-name">巴博斯</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(88)">
+					
+									<img src="" />
+									<span class="brand-name">本田</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(90)">
+					
+									<img src="" />
+									<span class="brand-name">标致</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(93)">
+					
+									<img src="" />
+									<span class="brand-name">比亚迪</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(158)">
+					
+									<img src="" />
+									<span class="brand-name">比速</span>
+								</a>
+							</li>
+					
+						</ul>
+						<div class="gray-div" style="width:100%;height:10px; background-color: #efeff4"></div>
+					
+						<div class="brand-key">
+							C
+						</div>
+						<ul class="car-list car-brand">
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(25)">
+					
+									<img src="" />
+									<span class="brand-name">传祺</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(87)">
+					
+									<img src="" />
+									<span class="brand-name">昌河</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(141)">
+					
+									<img src="" />
+									<span class="brand-name">长城</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(142)">
+					
+									<img src="" />
+									<span class="brand-name">长安</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(143)">
+					
+									<img src="" />
+									<span class="brand-name">长安商用</span>
+								</a>
+							</li>
+					
+						</ul>
+						<div class="gray-div" style="width:100%;height:10px; background-color: #efeff4"></div>
+					
+						<div class="brand-key">
+							D
+						</div>
+						<ul class="car-list car-brand">
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(1)">
+					
+									<img src="" />
+									<span class="brand-name">DS</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(11)">
+					
+									<img src="" />
+									<span class="brand-name">东南</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(12)">
+					
+									<img src="" />
+									<span class="brand-name">东风</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(13)">
+					
+									<img src="" />
+									<span class="brand-name">东风小康</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(14)">
+					
+									<img src="" />
+									<span class="brand-name">东风风度</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(54)">
+					
+									<img src="" />
+									<span class="brand-name">大众</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(55)">
+					
+									<img src="" />
+									<span class="brand-name">大发</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(56)">
+					
+									<img src="" />
+									<span class="brand-name">大迪</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(57)">
+					
+									<img src="" />
+									<span class="brand-name">大通</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(74)">
+					
+									<img src="" />
+									<span class="brand-name">帝豪</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(136)">
+					
+									<img src="" />
+									<span class="brand-name">道奇</span>
+								</a>
+							</li>
+					
+						</ul>
+						<div class="gray-div" style="width:100%;height:10px; background-color: #efeff4"></div>
+					
+						<div class="brand-key">
+							F
+						</div>
+						<ul class="car-list car-brand">
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(19)">
+					
+									<img src="" />
+									<span class="brand-name">丰田</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(72)">
+					
+									<img src="" />
+									<span class="brand-name">富奇</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(100)">
+					
+									<img src="" />
+									<span class="brand-name">法拉利</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(110)">
+					
+									<img src="" />
+									<span class="brand-name">福特</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(111)">
+					
+									<img src="" />
+									<span class="brand-name">福田</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(112)">
+					
+									<img src="" />
+									<span class="brand-name">福迪</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(123)">
+					
+									<img src="" />
+									<span class="brand-name">菲亚特</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(151)">
+					
+									<img src="" />
+									<span class="brand-name">风神</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(152)">
+					
+									<img src="" />
+									<span class="brand-name">风行</span>
+								</a>
+							</li>
+					
+						</ul>
+						<div class="gray-div" style="width:100%;height:10px; background-color: #efeff4"></div>
+					
+						<div class="brand-key">
+							G
+						</div>
+						<ul class="car-list car-brand">
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(126)">
+					
+									<img src="" />
+									<span class="brand-name">观致</span>
+								</a>
+							</li>
+					
+						</ul>
+						<div class="gray-div" style="width:100%;height:10px; background-color: #efeff4"></div>
+					
+						<div class="brand-key">
+							H
+						</div>
+						<ul class="car-list car-brand">
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(39)">
+					
+									<img src="" />
+									<span class="brand-name">华北</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(40)">
+					
+									<img src="" />
+									<span class="brand-name">华普</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(41)">
+					
+									<img src="" />
+									<span class="brand-name">华泰</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(42)">
+					
+									<img src="" />
+									<span class="brand-name">华阳</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(43)">
+					
+									<img src="" />
+									<span class="brand-name">华颂</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(51)">
+					
+									<img src="" />
+									<span class="brand-name">哈弗</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(52)">
+					
+									<img src="" />
+									<span class="brand-name">哈飞</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(75)">
+					
+									<img src="" />
+									<span class="brand-name">幻速</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(79)">
+					
+									<img src="" />
+									<span class="brand-name">恒天</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(95)">
+					
+									<img src="" />
+									<span class="brand-name">汇众</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(101)">
+					
+									<img src="" />
+									<span class="brand-name">海格</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(102)">
+					
+									<img src="" />
+									<span class="brand-name">海马</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(113)">
+					
+									<img src="" />
+									<span class="brand-name">红旗</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(154)">
+					
+									<img src="" />
+									<span class="brand-name">黄海</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(155)">
+					
+									<img src="" />
+									<span class="brand-name">黑豹</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(157)">
+					
+									<img src="" />
+									<span class="brand-name">汉腾</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(162)">
+					
+									<img src="" />
+									<span class="brand-name">哈哈哈</span>
+								</a>
+							</li>
+					
+						</ul>
+						<div class="gray-div" style="width:100%;height:10px; background-color: #efeff4"></div>
+					
+						<div class="brand-key">
+							J
+						</div>
+						<ul class="car-list car-brand">
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(2)">
+					
+									<img src="" />
+									<span class="brand-name">Jeep</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(20)">
+					
+									<img src="" />
+									<span class="brand-name">九龙</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(26)">
+					
+									<img src="" />
+									<span class="brand-name">佳星</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(47)">
+					
+									<img src="" />
+									<span class="brand-name">吉利</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(48)">
+					
+									<img src="" />
+									<span class="brand-name">吉奥</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(81)">
+					
+									<img src="" />
+									<span class="brand-name">捷豹</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(96)">
+					
+									<img src="" />
+									<span class="brand-name">江南</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(97)">
+					
+									<img src="" />
+									<span class="brand-name">江淮</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(98)">
+					
+									<img src="" />
+									<span class="brand-name">江铃</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(127)">
+					
+									<img src="" />
+									<span class="brand-name">解放</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(138)">
+					
+									<img src="" />
+									<span class="brand-name">金杯</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(139)">
+					
+									<img src="" />
+									<span class="brand-name">金程</span>
+								</a>
+							</li>
+					
+						</ul>
+						<div class="gray-div" style="width:100%;height:10px; background-color: #efeff4"></div>
+					
+						<div class="brand-key">
+							K
+						</div>
+						<ul class="car-list car-brand">
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(29)">
+					
+									<img src="" />
+									<span class="brand-name">克莱斯勒</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(32)">
+					
+									<img src="" />
+									<span class="brand-name">凯翼</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(33)">
+					
+									<img src="" />
+									<span class="brand-name">凯迪拉克</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(44)">
+					
+									<img src="" />
+									<span class="brand-name">卡威</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(77)">
+					
+									<img src="" />
+									<span class="brand-name">开瑞</span>
+								</a>
+							</li>
+					
+						</ul>
+						<div class="gray-div" style="width:100%;height:10px; background-color: #efeff4"></div>
+					
+						<div class="brand-key">
+							L
+						</div>
+						<ul class="car-list car-brand">
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(31)">
+					
+									<img src="" />
+									<span class="brand-name">兰博基尼</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(35)">
+					
+									<img src="" />
+									<span class="brand-name">力帆</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(36)">
+					
+									<img src="" />
+									<span class="brand-name">劳斯莱斯</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(89)">
+					
+									<img src="" />
+									<span class="brand-name">林肯</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(104)">
+					
+									<img src="" />
+									<span class="brand-name">猎豹</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(107)">
+					
+									<img src="" />
+									<span class="brand-name">理念</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(122)">
+					
+									<img src="" />
+									<span class="brand-name">莲花</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(131)">
+					
+									<img src="" />
+									<span class="brand-name">路特斯</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(132)">
+					
+									<img src="" />
+									<span class="brand-name">路虎</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(140)">
+					
+									<img src="" />
+									<span class="brand-name">铃木</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(145)">
+					
+									<img src="" />
+									<span class="brand-name">陆风</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(149)">
+					
+									<img src="" />
+									<span class="brand-name">雷克萨斯</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(150)">
+					
+									<img src="" />
+									<span class="brand-name">雷诺</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(167)">
+					
+									<img src="" />
+									<span class="brand-name">啦啦啦</span>
+								</a>
+							</li>
+					
+						</ul>
+						<div class="gray-div" style="width:100%;height:10px; background-color: #efeff4"></div>
+					
+						<div class="brand-key">
+							M
+						</div>
+						<ul class="car-list car-brand">
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(3)">
+					
+									<img src="" />
+									<span class="brand-name">MG</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(4)">
+					
+									<img src="" />
+									<span class="brand-name">MINI</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(105)">
+					
+									<img src="" />
+									<span class="brand-name">玛莎拉蒂</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(116)">
+					
+									<img src="" />
+									<span class="brand-name">美亚</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(133)">
+					
+									<img src="" />
+									<span class="brand-name">迈凯伦</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(153)">
+					
+									<img src="" />
+									<span class="brand-name">马自达</span>
+								</a>
+							</li>
+					
+						</ul>
+						<div class="gray-div" style="width:100%;height:10px; background-color: #efeff4"></div>
+					
+						<div class="brand-key">
+							N
+						</div>
+						<ul class="car-list car-brand">
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(114)">
+					
+									<img src="" />
+									<span class="brand-name">纳智捷</span>
+								</a>
+							</li>
+					
+						</ul>
+						<div class="gray-div" style="width:100%;height:10px; background-color: #efeff4"></div>
+					
+						<div class="brand-key">
+							O
+						</div>
+						<ul class="car-list car-brand">
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(91)">
+					
+									<img src="" />
+									<span class="brand-name">欧宝</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(92)">
+					
+									<img src="" />
+									<span class="brand-name">欧朗</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(128)">
+					
+									<img src="" />
+									<span class="brand-name">讴歌</span>
+								</a>
+							</li>
+					
+						</ul>
+						<div class="gray-div" style="width:100%;height:10px; background-color: #efeff4"></div>
+					
+						<div class="brand-key">
+							Q
+						</div>
+						<ul class="car-list car-brand">
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(30)">
+					
+									<img src="" />
+									<span class="brand-name">全球鹰</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(49)">
+					
+									<img src="" />
+									<span class="brand-name">启腾</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(50)">
+					
+									<img src="" />
+									<span class="brand-name">启辰</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(59)">
+					
+									<img src="" />
+									<span class="brand-name">奇瑞</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(76)">
+					
+									<img src="" />
+									<span class="brand-name">庆铃</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(130)">
+					
+									<img src="" />
+									<span class="brand-name">起亚</span>
+								</a>
+							</li>
+					
+						</ul>
+						<div class="gray-div" style="width:100%;height:10px; background-color: #efeff4"></div>
+					
+						<div class="brand-key">
+							R
+						</div>
+						<ul class="car-list car-brand">
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(5)">
+					
+									<img src="" />
+									<span class="brand-name">RUF</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(86)">
+					
+									<img src="" />
+									<span class="brand-name">日产</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(108)">
+					
+									<img src="" />
+									<span class="brand-name">瑞麒</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(121)">
+					
+									<img src="" />
+									<span class="brand-name">荣威</span>
+								</a>
+							</li>
+					
+						</ul>
+						<div class="gray-div" style="width:100%;height:10px; background-color: #efeff4"></div>
+					
+						<div class="brand-key">
+							S
+						</div>
+						<ul class="car-list car-brand">
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(6)">
+					
+									<img src="" />
+									<span class="brand-name">SPRINGO</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(7)">
+					
+									<img src="" />
+									<span class="brand-name">Smart</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(10)">
+					
+									<img src="" />
+									<span class="brand-name">三菱</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(45)">
+					
+									<img src="" />
+									<span class="brand-name">双环</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(46)">
+					
+									<img src="" />
+									<span class="brand-name">双龙</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(78)">
+					
+									<img src="" />
+									<span class="brand-name">思铭</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(82)">
+					
+									<img src="" />
+									<span class="brand-name">斯巴鲁</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(83)">
+					
+									<img src="" />
+									<span class="brand-name">斯柯达</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(115)">
+					
+									<img src="" />
+									<span class="brand-name">绅宝</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(129)">
+					
+									<img src="" />
+									<span class="brand-name">赛宝</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(146)">
+					
+									<img src="" />
+									<span class="brand-name">陕汽通家</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(156)">
+					
+									<img src="" />
+									<span class="brand-name">斯威</span>
+								</a>
+							</li>
+					
+						</ul>
+						<div class="gray-div" style="width:100%;height:10px; background-color: #efeff4"></div>
+					
+						<div class="brand-key">
+							T
+						</div>
+						<ul class="car-list car-brand">
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(58)">
+					
+									<img src="" />
+									<span class="brand-name">天马</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(103)">
+					
+									<img src="" />
+									<span class="brand-name">特斯拉</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(117)">
+					
+									<img src="" />
+									<span class="brand-name">腾势</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(134)">
+					
+									<img src="" />
+									<span class="brand-name">通用</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(135)">
+					
+									<img src="" />
+									<span class="brand-name">通田</span>
+								</a>
+							</li>
+					
+						</ul>
+						<div class="gray-div" style="width:100%;height:10px; background-color: #efeff4"></div>
+					
+						<div class="brand-key">
+							W
+						</div>
+						<ul class="car-list car-brand">
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(9)">
+					
+									<img src="" />
+									<span class="brand-name">万丰</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(22)">
+					
+									<img src="" />
+									<span class="brand-name">五十铃</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(23)">
+					
+									<img src="" />
+									<span class="brand-name">五菱</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(63)">
+					
+									<img src="" />
+									<span class="brand-name">威兹曼</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(64)">
+					
+									<img src="" />
+									<span class="brand-name">威旺</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(65)">
+					
+									<img src="" />
+									<span class="brand-name">威麟</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(99)">
+					
+									<img src="" />
+									<span class="brand-name">沃尔沃</span>
+								</a>
+							</li>
+					
+						</ul>
+						<div class="gray-div" style="width:100%;height:10px; background-color: #efeff4"></div>
+					
+						<div class="brand-key">
+							X
+						</div>
+						<ul class="car-list car-brand">
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(53)">
+					
+									<img src="" />
+									<span class="brand-name">夏利</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(84)">
+					
+									<img src="" />
+									<span class="brand-name">新凯</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(85)">
+					
+									<img src="" />
+									<span class="brand-name">新雅途</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(106)">
+					
+									<img src="" />
+									<span class="brand-name">现代</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(124)">
+					
+									<img src="" />
+									<span class="brand-name">西安奥拓</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(125)">
+					
+									<img src="" />
+									<span class="brand-name">西雅特</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(147)">
+					
+									<img src="" />
+									<span class="brand-name">雪佛兰</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(148)">
+					
+									<img src="" />
+									<span class="brand-name">雪铁龙</span>
+								</a>
+							</li>
+					
+						</ul>
+						<div class="gray-div" style="width:100%;height:10px; background-color: #efeff4"></div>
+					
+						<div class="brand-key">
+							Y
+						</div>
+						<ul class="car-list car-brand">
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(8)">
+					
+									<img src="" />
+									<span class="brand-name">一汽</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(21)">
+					
+									<img src="" />
+									<span class="brand-name">云雀</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(27)">
+					
+									<img src="" />
+									<span class="brand-name">依维柯</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(80)">
+					
+									<img src="" />
+									<span class="brand-name">扬子</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(94)">
+					
+									<img src="" />
+									<span class="brand-name">永源</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(118)">
+					
+									<img src="" />
+									<span class="brand-name">英伦</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(119)">
+					
+									<img src="" />
+									<span class="brand-name">英致</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(120)">
+					
+									<img src="" />
+									<span class="brand-name">英菲尼迪</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(137)">
+					
+									<img src="" />
+									<span class="brand-name">野马</span>
+								</a>
+							</li>
+					
+						</ul>
+						<div class="gray-div" style="width:100%;height:10px; background-color: #efeff4"></div>
+					
+						<div class="brand-key">
+							Z
+						</div>
+						<ul class="car-list car-brand">
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(15)">
+					
+									<img src="" />
+									<span class="brand-name">中兴</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(16)">
+					
+									<img src="" />
+									<span class="brand-name">中华</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(17)">
+					
+									<img src="" />
+									<span class="brand-name">中欧</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(18)">
+					
+									<img src="" />
+									<span class="brand-name">中顺</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(24)">
+					
+									<img src="" />
+									<span class="brand-name">众泰</span>
+								</a>
+							</li>
+					
+							<li>
+								<a href="#" onclick="routerCarLineList(109)">
+					
+									<img src="" />
+									<span class="brand-name">知豆</span>
+								</a>
+							</li>
+					
+						</ul>
+						<div class="gray-div" style="width:100%;height:10px; background-color: #efeff4"></div>
+                
+            </div>
+
+				</div>
+				<!--content end-->
+			</div>
+			<!--page-current end-->
+		</div>
+		<!--page end-->
+	</body>
+
+</html>
+<!--SUI框架-->
+<link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.css">
+<script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.js' charset='utf-8'></script>
+<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.js' charset='utf-8'></script>
+<!--如果你用到了拓展包中的组件，还需要引用下面两个-->
+<link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.css">
+<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.js' charset='utf-8'></script>
+<!--SUI框架-->
+
+<!--OTOC 开始-->
+<link rel="stylesheet" href="css/otoc-main.css" />
+<script type="text/javascript">
+	$(function() {
+		$(document).on('click', '.alert-text', function() {
+			$.alert('已经成功绑定！');
+		});
+		
+		
+		/*点击搜索按钮 检索车品牌*/
+		$("#searchBtn").click(function(){
+			 $('#seach-container ul').html('');
+			var filter = $("#search").val().toString();
+			console.log(filter);
+			$('#list ul li a span').each(function () {
+            var brand = $(this).text().toString();
+            var li = $(this).parent().parent();
+            //克隆进搜索container
+            if (filter) {
+                if (brand.indexOf(filter) != -1) {
+                    $('#list').hide();
+                    $('#seach-container ul').append(li.clone());
+                } else {
+                }
+            } else {
+                $('#seach-container ul').html('');
+                $('#list').show();
+            }
+        });
+		});
+	})
+</script>
+<!--OTOC 结束-->

@@ -670,34 +670,33 @@ p {
   border-top: none !important;
 }
 .myCar-card {
-  height: 6rem;
-  background-color: #79aaf2;
+  min-height: 6rem;
+  padding: 0 0.75rem;
+  display: flex;
+  align-items: center;
 }
 .myCar-card div:nth-child(1) {
-  right: 0;
-  bottom: 0;
-  max-width: 10.5rem;
-  max-height: 2.5rem;
-  opacity: 0.2;
+  width: 20%;
+  height: 3rem;
+  margin-right: 1rem;
 }
-.myCar-card .otoc-car-num {
-  height: 1.75rem;
-  width: 6.5rem;
-  top: 1.1rem;
-  left: 1.25rem;
+.myCar-card div:nth-child(1) img {
+  max-height: 3rem;
+  max-width: 3rem;
+}
+.myCar-card div:nth-child(2) {
+  width: 70%;
+}
+.myCar-card div:nth-child(2) .otoc-car-num {
+  margin-bottom: 0.2rem;
   font-size: 1rem;
-  line-height: 1.75rem;
-  color: #ffffff;
-  text-align: center;
-  border: 1px #ffffff solid;
-  border-radius: 0.2rem;
+  color: #666666;
 }
-.myCar-card .otoc-car-type {
-  bottom: 1.17rem;
-  left: 1.25rem;
+.myCar-card div:nth-child(2) .otoc-car-type {
+  display: inline-block;
+  min-width: 8.9rem;
   font-size: 0.75rem;
-  line-height: 0.8rem;
-  color: #FFFFFF;
+  color: #999999;
 }
 .otoc-list-project-overview-row {
   line-height: 0.75rem;

@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>jquery星级评论打分组件</title>
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+		<script>
+			var pRate = function(box, callBack) {
+				this.Index = null;
+				var B = $("#" + box),
+					rate = B.children("i"),
+					w = rate.width(),
+					n = rate.length,
+					me = this;
+				for(var i = 0; i < n; i++) {
+					rate.eq(i).css({
+						'width': w * (i + 1),
+						'z-index': n - i
+					});
+				}
+				/*rate.hover(function() {
+					var S = B.children("i.select");
+					$(this).addClass("hover").siblings().removeClass("hover");
+					if($(this).index() > S.index()) {
+						S.addClass("hover");
+					}
+				}, function() {
+					rate.removeClass("hover");
+				})*/
+				rate.click(function() {
+					rate.removeClass("select hover");
+					$(this).addClass("select");
+					me.Index = $(this).index() + 1;
+					if(callBack) {
+						callBack();
+					}
+				})
+			}
+		</script>
+		<style type="text/css">
+			h1 {
+				font: 26px/3 'microsoft yahei', 'simhei';
+				color: #000;
+				text-indent: 2em;
+				text-shadow: 1px 1px 2px #ccc
+			}
+			
+			.p_rate {
+				height: 14px;
+				position: relative;
+				width: 80px;
+				overflow: hidden;
+				display: inline-block;
+				background: url(img/rate.png) repeat-x;
+				margin: 40px 100px
+			}
+			
+			.p_rate i {
+				position: absolute;
+				top: 0;
+				left: 0;
+				cursor: pointer;
+				height: 14px;
+				width: 16px;
+				background: url(img/rate.png) repeat-x 0 -500px
+			}
+			
+			.p_rate .select {
+				background-position: 0 -32px
+			}
+			
+			.p_rate .hover {
+				background-position: 0 -16px
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>jquery星级评论打分组件</h1>
+
+		<span class="p_rate" id="p_rate">
+		 <i title="非常差"></i> 
+		 <i title="差"></i> 
+		 <i title="一般"></i> 
+		 <i title="好"></i> 
+		 <i title="非常好"></i> 
+		</span>
+		<script>
+			var Rate = new pRate("p_rate", function() {
+				console.log($(this));
+			});
+		</script>
+	</body>
+
+</html>
