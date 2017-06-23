@@ -15,17 +15,20 @@
 	<body>
 		<div class="page-group">
 			<div class="page page-current">
-				 <header class="bar bar-nav bar-white">
-					
-				  <div class="searchbar">
-				    <a class="searchbar-cancel" id="searchBtn">搜索</a>
-				    <div class="search-input">
-				      <label class="icon icon-search" for="search"></label>
-				      <input type="search" id='search' placeholder='输入关键字...'/>
-				    </div>
-				  </div>
-				
+				 <header class="bar bar-nav bar-white">	
+				   <div class="searchbar row">
+		                <div class="search-input col-80">
+		                    <label class="icon icon-search" for="search"></label>
+		                    <input class="otoc-textcenter" type="search" id='search' placeholder='输入关键字...'/>
+		                </div>
+		                <a class="button button-fill button-primary col-20" id="searchBtn" style="top:1px; background-color: #23BAB5;">搜索</a>
+		           </div>
 				</header>
+				<div id="a_z" class="a_z">
+					<ul>
+					
+					</ul>
+				</div>
 				<div class="content otoc-bg-white otoc-m-t-10">
 					 <div id="seach-container">
 		                <ul class="car-list">
@@ -1509,27 +1512,55 @@
 		});
 		
 		
-		/*点击搜索按钮 检索车品牌*/
-		$("#searchBtn").click(function(){
-			 $('#seach-container ul').html('');
-			var filter = $("#search").val().toString();
-			console.log(filter);
-			$('#list ul li a span').each(function () {
-            var brand = $(this).text().toString();
-            var li = $(this).parent().parent();
-            //克隆进搜索container
-            if (filter) {
-                if (brand.indexOf(filter) != -1) {
-                    $('#list').hide();
-                    $('#seach-container ul').append(li.clone());
+		 /*点击搜索按钮 检索车品牌*/
+        $(document).on('click','#searchBtn',function(){
+            $('#seach-container ul').html('');
+            var filter = $("#search").val().toString();
+            $('#list ul li a span').each(function () {
+                var brand = $(this).text().toString();
+                var li = $(this).parent().parent();
+                if (filter) {
+                    if (brand.indexOf(filter) != -1) {
+                        $('#list').hide();
+                        $('#seach-container ul').append(li.clone());
+                    } else {
+                    }
                 } else {
+                    $('#seach-container ul').html('');
+                    $('#list').show();
                 }
-            } else {
+            });
+        });
+        $(document).bind('change keyup','#search',function(){
+            var filter = $("#search").val();
+            if(filter == ''){
                 $('#seach-container ul').html('');
                 $('#list').show();
             }
         });
-		});
+        
+        
+        /*插入A-Z*/
+      	$("#list .brand-key").each(function(){
+      		var a_z = $(this).text();
+//    		console.log(a_z);  		
+      		var scrollTop = $(this).offset().top;	
+//    		console.log(scrollTop);
+      		var html ='<li id='+a_z+' data-scroll ='+ scrollTop +'>'+a_z+'</li>';
+      		$(".a_z ul").append(html);
+      	});
+      	$("#a_z").on("click",'ul li',function(){
+      		var scrollTop = $(this).data("scroll") - 54;
+      		console.log(scrollTop);
+      		var brandKey = $(this).data("id");
+      		$(".content").scrollTop(scrollTop);
+      		/*$("#list .brand-key").each(function(){
+      			var brandText =$(this).text();
+      			if(brandKey === brandText){
+      				$(".page-group").scrollTop(scrollTop);
+      			}
+      		});*/
+      	})
 	})
 </script>
 <!--OTOC 结束-->
