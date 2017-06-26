@@ -1552,44 +1552,39 @@
       		$(".a_z ul").append(html);
       	});
       	
-      	$("#a_z").on("touchstart ",'ul li',function(){
+      	$("#a_z").on("touchstart touchmove",'ul li',function(e){
       		
       		/*点击字母检索，清楚搜索结果，显示全部列表*/
       		$("#search").val('');
       		$('#seach-container ul').html('');
             $('#list').show();
             
+            event.preventDefault();
+		    e = e || window.event;
+		    var touch = e.originalEvent.targetTouches[0];
+		    var ele = document.elementFromPoint(touch.pageX, touch.pageY);
+		    
             /*展示点击字母*/
             var LetterBox=$('#letter');
-            var LetterHtml=$(this).html();
+            var LetterHtml=$(ele ).html();
             LetterBox.html(LetterHtml).fadeIn(); 
             setTimeout(function(){ LetterBox.fadeOut(); },500);
             
             /*滚动相应位置*/
-      		var scrollTop = $(this).data("scroll") - 54;
-      		var brandKey = $(this).data("id");
+      		var scrollTop = $(ele ).data("scroll") - 54;
+      		var brandKey = $(ele ).data("id");
       		$(".content").scrollTop(scrollTop);
       		
       	});
       	
-      	$("#a_z ul li").on('touchmove',function(e){
-      		/*点击字母检索，清楚搜索结果，显示全部列表*/
-      		$("#search").val('');
-      		$('#seach-container ul').html('');
-            $('#list').show();
-            
-            /*展示点击字母*/
-            var LetterBox=$('#letter');
-            var LetterHtml=$(e.target).html();
-            LetterBox.html(LetterHtml).fadeIn(); 
-            setTimeout(function(){ LetterBox.fadeOut(); },500);
-            
-            /*滚动相应位置*/
-      		var scrollTop = $(e.target).data("scroll") - 54;
-      		var brandKey = $(e.target).data("id");
-      		$(".content").scrollTop(scrollTop);
-      		
-      	});
+//    	$("#a_z ul li").on('touchmove',function(e){
+//    		event.preventDefault();
+//		    e = e || window.event;
+//		    var touch = e.originalEvent.targetTouches[0];
+//		    var ele = document.elementFromPoint(touch.pageX, touch.pageY);
+//		    console.log(ele);
+//    		
+//    	});
       	
     
       	var mTop = ($(".a_z").height()) /2 - $(".a_z ul").height() /2 + 22 + "px";
