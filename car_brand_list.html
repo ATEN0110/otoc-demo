@@ -9,6 +9,7 @@
 		<link rel="shortcut icon" href="/favicon.ico">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
 		<link rel="stylesheet" href="css/car.css" />
 	</head>
 
@@ -23,6 +24,7 @@
 		                </div>
 		                <a class="button button-fill button-primary col-20" id="searchBtn" style="top:1px; background-color: #23BAB5;">搜索</a>
 		           </div>
+		           <div id="letter">A</div>
 				</header>
 				<div id="a_z" class="a_z">
 					<ul>
@@ -1549,22 +1551,25 @@
       		var html ='<li id='+a_z+' data-scroll ='+ scrollTop +'>'+a_z+'</li>';
       		$(".a_z ul").append(html);
       	});
+      	
       	$("#a_z").on("touchstart touchmove",'ul li',function(){
+      		$("#search").val('');
+      		$('#seach-container ul').html('');
+//          $('#list').show();
+            var LetterBox=$('#letter');
+            var LetterHtml=$(this).html();
+            LetterBox.html(LetterHtml).fadeIn(); 
+            
+            setTimeout(function(){ LetterBox.fadeOut(); },1000);
+
       		var scrollTop = $(this).data("scroll") - 54;
-      		console.log(scrollTop);
+
       		var brandKey = $(this).data("id");
       		$(".content").scrollTop(scrollTop);
-      		/*$("#list .brand-key").each(function(){
-      			var brandText =$(this).text();
-      			if(brandKey === brandText){
-      				$(".page-group").scrollTop(scrollTop);
-      			}
-      		});*/
       	});
       	
     
       	var mTop = ($(".a_z").height()) /2 - $(".a_z ul").height() /2 + 22 + "px";
-     
       	console.log(mTop);
       	$(".a_z ul").css("margin-top",mTop);
       	
