@@ -1560,7 +1560,16 @@
       				$(".page-group").scrollTop(scrollTop);
       			}
       		});*/
-      	})
+      	});
+      	
+      	var b = ($(".a_z").height() - 44) /2 ;
+      	var s =  $(".a_z ul").height() * 0.5  ;
+      	var mTop = b - s + "px";
+      	console.log(b);
+      	console.log(s);
+      	console.log(mTop);
+      	$(".a_z ul").css("margin-top",mTop);
+      	
 	})
 </script>
 <!--OTOC 结束-->
