@@ -23,20 +23,20 @@ ul li{list-style: none}
 
 /*a_z*/
 #letter {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     border-radius: 5px;
-    font-size: 75px;
+    font-size: 32px;
     color: #fff;
     text-align: center;
-    line-height: 100px;
+    line-height: 50px;
     background: rgba(35,168,181,0.6);
     position: fixed;
     left: 50%;
     top: 50%;
-    margin: -50px 0px 0px 0px;
+    margin: -25px 0px 0px 0px;
     z-index: 99;
-    /*display: none;*/
+    display: none;
 }
 .a_z{width:30px; height:100%; display:table-cell;vertical-align:middle; text-align: center; position: fixed; right: 0px; top:0; z-index: 9;}
 .a_z ul{ background: rgba(255,255,255,0.5);}
