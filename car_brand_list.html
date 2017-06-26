@@ -1552,20 +1552,43 @@
       		$(".a_z ul").append(html);
       	});
       	
-      	$("#a_z").on("touchstart touchmove",'ul li',function(){
+      	$("#a_z").on("touchstart ",'ul li',function(){
+      		
+      		/*点击字母检索，清楚搜索结果，显示全部列表*/
       		$("#search").val('');
       		$('#seach-container ul').html('');
             $('#list').show();
+            
+            /*展示点击字母*/
             var LetterBox=$('#letter');
             var LetterHtml=$(this).html();
             LetterBox.html(LetterHtml).fadeIn(); 
-            
             setTimeout(function(){ LetterBox.fadeOut(); },500);
-
+            
+            /*滚动相应位置*/
       		var scrollTop = $(this).data("scroll") - 54;
-
       		var brandKey = $(this).data("id");
       		$(".content").scrollTop(scrollTop);
+      		
+      	});
+      	
+      	$("#a_z ul li").on('touchmove',function(e){
+      		/*点击字母检索，清楚搜索结果，显示全部列表*/
+      		$("#search").val('');
+      		$('#seach-container ul').html('');
+            $('#list').show();
+            
+            /*展示点击字母*/
+            var LetterBox=$('#letter');
+            var LetterHtml=$(e.target).html();
+            LetterBox.html(LetterHtml).fadeIn(); 
+            setTimeout(function(){ LetterBox.fadeOut(); },500);
+            
+            /*滚动相应位置*/
+      		var scrollTop = $(e.target).data("scroll") - 54;
+      		var brandKey = $(e.target).data("id");
+      		$(".content").scrollTop(scrollTop);
+      		
       	});
       	
     
