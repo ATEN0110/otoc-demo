@@ -1549,7 +1549,7 @@
       		var html ='<li id='+a_z+' data-scroll ='+ scrollTop +'>'+a_z+'</li>';
       		$(".a_z ul").append(html);
       	});
-      	$("#a_z").on("click",'ul li',function(){
+      	$("#a_z").on("touchstart touchmove",'ul li',function(){
       		var scrollTop = $(this).data("scroll") - 54;
       		console.log(scrollTop);
       		var brandKey = $(this).data("id");

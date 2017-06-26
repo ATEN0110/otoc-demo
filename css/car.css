@@ -22,7 +22,7 @@ ul li{list-style: none}
 .brand-key{width:100%; border-bottom: 1px solid #e6e6e6; padding:0.25rem 0.5rem; color:#666666;}
 
 /*a_z*/
-.a_z{position: fixed; right: 5px; top:100px; z-index: 999;}
+.a_z{position: fixed; right: 15px; top:100px; z-index: 999;}
 .a_z li{font-size: 0.5rem; line-height: 1rem; color: #23bab5; text-align: right;}
 
 
