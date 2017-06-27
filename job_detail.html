@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>工单详情</title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+		<style>
+			ul{margin: 0; padding: 0;}
+			ul li{list-style: none; margin: 0; padding: 0;}
+			/*头部*/
+			.job-detail-header {width:90%; margin: 1rem 5%; background-color: #fff; border-radius: 0.6rem;}
+			.job-detail-tip{width:4rem; height:4rem; top:-0.25rem; right: -0.25rem;}
+			.job-detail-tip img{max-width: 4rem; max-height:4rem;}
+			.job-detail-header .car-num-container{padding: 1rem 13%; display: flex;  align-items:center;  border-bottom:1px #E6E6E6 dashed;}
+			.job-detail-header .car-num-container img{width:5.4rem; height:2.54rem; margin-right: 10%;}
+			.job-detail-header .car-num-container .otoc-semicircle {width:0.9rem; height:0.9rem; background-color: #efeff4; border-radius: 50%;}
+			.job-detail-header .car-num-container .otoc-semicircle-left{left: -0.45rem; bottom:-0.45rem}
+			.job-detail-header .car-num-container .otoc-semicircle-right{right: -0.45rem; bottom:-0.45rem}
+			.job-detail-header ul{ margin:1rem 13%; padding-bottom: 1rem;  font-size: 0.7rem; color:#666666}
+			.job-detail-header ul li{line-height: 1.375rem;}
+			
+			/*内容*/
+			.detai-container>li>div{display:flex; justify-content:space-between; line-height: 3rem; border-top:1px solid #efeff4; 
+				border-bottom:1px solid #efeff4; border-left: 0.25rem solid #69cfed ; 	
+			}
+			.detai-container>li>div span:nth-child(1){margin-left: 0.5rem; font-size: 0.75rem; color: #333333;}
+			.detai-container>li>div span:nth-child(2){margin-right:1.875rem; font-size: 0.8rem; font-weight: bold; color: #333333;}
+			.shrink-icon{width:1.1rem; height:1.1rem; background: url(img/job-detail-up.png); background-size:1.1rem 1.1rem ; top: 0.95rem; right:0.4rem; }
+			.detai-container>li>ul{margin-left: 0.75rem; margin-right: 1.875rem;}
+			.detai-container>li ul{padding:0.5rem 0; }
+			.detai-container .product-info li{display: flex;justify-content:space-between; font-size: 0.7rem; font-size: #666; line-height: 1.5rem;}
+		    .li-border li{ border-bottom: 1px solid #efeff4; padding-bottom: 0.25rem; margin-bottom: 0.25rem;}
+		    .li-border li:last-child {border-bottom: none;}
+		    .li-border li div{display: flex;justify-content:space-between;flex-wrap:wrap;}
+		    .li-border li div:nth-child(1) span{font-size: 0.7rem; line-height: 1.2rem; color: #666666;}
+		    .li-border li div:nth-child(2){font-size: 0.5rem;  color: #999999;}
+		    .li-border li div:nth-child(2) img{width:0.55rem; height:0.6rem; margin-right: 0.25rem;}
+		    .li-border li div:nth-child(2) span{line-height: 1.2rem;}
+		</style>
+	</head>
+	<body>
+		<div class="page-group">
+			<header>
+				<div class="job-detail-header otoc-p-r">
+					<div class="job-detail-tip otoc-p-a"><img src="img/job-detail-sgz.png" alt=""/></div>
+					<div class="car-num-container otoc-p-r">
+						<img src="img/job-detail-caricon.png" alt="" />
+						<div>
+							<p class="otoc-fontsize-18">浙B-4444</p>
+							<p class="otoc-fontsize-16" style="color: #666666;">类型：维修</p>
+						</div>
+						<div class="otoc-p-a otoc-semicircle otoc-semicircle-right"></div>
+						<div class="otoc-p-a otoc-semicircle otoc-semicircle-left"></div>
+					</div>
+					<ul>
+						<li>工单号：GD201706190001</li>
+						<li>服务顾问：张三</li>
+						<li>开单时间：2017-06-19 13:31:39</li>
+						<li>服务门店：氧车乐新乐汇店</li>
+					</ul>
+				</div>
+			</header>
+			<div class="otoc-bg-white">
+				<ul class="detai-container">
+					<li class="product-info">
+						<div class="otoc-p-r">
+							<span>产品信息</span>
+							<span>￥596 </span>
+							<i class="shrink-icon otoc-p-a"></i>
+						</div>
+						<ul>
+							<li>
+								<span>乐氧常护套餐</span>
+								<span>￥298</span>
+							</li>
+							<li>
+								<span>乐氧常护套餐</span>
+								<span>￥298</span>
+							</li>
+						</ul>
+					</li>
+					<li class="project-info">
+						<div class="otoc-p-r">
+							<span>项目信息</span>
+							<span>￥200 </span>
+							<i class="shrink-icon otoc-p-a"></i>
+						</div>
+						<ul class=" li-border">
+							<li>
+								<div>
+									<span>更换机油</span>
+									<span>￥100</span>
+								</div>
+								<div>
+									<span> <img src="img/job-detail-people.png" alt="" />陈飘香 陈泽锋 陈飘香 </span>
+									<span >预计完工：2017-07-05 9：00</span>
+								</div>
+							</li>
+							<li>
+								<div>
+									<span>更换机油</span>
+									<span>￥100</span>
+								</div>
+								<div>
+									<span> <img src="img/job-detail-people.png" alt="" />陈飘香 陈泽锋 陈飘香 </span>
+									<span >预计完工：2017-07-05 9：00</span>
+								</div>
+							</li>
+							
+						</ul>
+					</li>
+					<li class="project-info">
+						<div class="otoc-p-r">
+							<span>项目信息</span>
+							<span>￥200 </span>
+							<i class="shrink-icon otoc-p-a"></i>
+						</div>
+						<ul class=" li-border">
+							<li>
+								<div>
+									<span>更换机油</span>
+									<span>￥100</span>
+								</div>
+								<div>
+									<span> <img src="img/job-detail-people.png" alt="" />陈飘香 陈泽锋 陈飘香 </span>
+									<span >预计完工：2017-07-05 9：00</span>
+								</div>
+							</li>
+							<li>
+								<div>
+									<span>更换机油</span>
+									<span>￥100</span>
+								</div>
+								<div>
+									<span> <img src="img/job-detail-people.png" alt="" />陈飘香 陈泽锋 陈飘香 </span>
+									<span >预计完工：2017-07-05 9：00</span>
+								</div>
+							</li>
+							
+						</ul>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
+<!--SUI框架-->
+<link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.css">
+<script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.js' charset='utf-8'></script>
+<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.js' charset='utf-8'></script>
+<!--如果你用到了拓展包中的组件，还需要引用下面两个-->
+<link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.css">
+<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.js' charset='utf-8'></script>
+<!--SUI框架-->
+<!--OTOC 开始-->
+<link rel="stylesheet" href="css/otoc-main.css" />

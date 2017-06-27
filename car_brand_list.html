@@ -1565,10 +1565,13 @@
 		    var ele = document.elementFromPoint(touch.pageX, touch.pageY);
 		    
             /*展示点击字母*/
-            var LetterBox=$('#letter');
-            var LetterHtml=$(ele ).html();
-            LetterBox.html(LetterHtml).fadeIn(); 
-            setTimeout(function(){ LetterBox.fadeOut(); },500);
+           if($(ele).text() != $("#letter").text){
+           		var LetterBox=$('#letter');
+	            var LetterHtml=$(ele ).html();
+	            LetterBox.html(LetterHtml).fadeIn(); 
+	            setTimeout(function(){ LetterBox.fadeOut(); },500);
+           }
+            
             
             /*滚动相应位置*/
       		var scrollTop = $(ele ).data("scroll") - 54;
