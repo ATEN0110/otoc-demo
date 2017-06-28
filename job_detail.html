@@ -29,10 +29,12 @@
 			}
 			.detai-container>li>div span:nth-child(1){margin-left: 0.5rem; font-size: 0.75rem; color: #333333;}
 			.detai-container>li>div span:nth-child(2){margin-right:1.875rem; font-size: 0.8rem; font-weight: bold; color: #333333;}
-			.shrink-icon{width:1.1rem; height:1.1rem; background: url(img/job-detail-up.png); background-size:1.1rem 1.1rem ; top: 0.95rem; right:0.4rem; }
+			.shrink-icon{width:1.1rem; height:1.1rem;  top: 0.95rem; right:0.4rem; }
+			.up{background: url(img/job-detail-up.png);background-size:1.1rem 1.1rem ;}
+			.down{background: url(img/job-detail-down.png);background-size:1.1rem 1.1rem ;}
 			.detai-container>li>ul{margin-left: 0.75rem; margin-right: 1.875rem;}
 			.detai-container>li ul{padding:0.5rem 0; }
-			.detai-container .product-info li{display: flex;justify-content:space-between; font-size: 0.7rem; font-size: #666; line-height: 1.5rem;}
+			.product-info li,.other-info li{display: flex;justify-content:space-between; font-size: 0.7rem; font-size: #666; line-height: 1.5rem;}
 		    .li-border li{ border-bottom: 1px solid #efeff4; padding-bottom: 0.25rem; margin-bottom: 0.25rem;}
 		    .li-border li:last-child {border-bottom: none;}
 		    .li-border li div{display: flex;justify-content:space-between;flex-wrap:wrap;}
@@ -40,112 +42,130 @@
 		    .li-border li div:nth-child(2){font-size: 0.5rem;  color: #999999;}
 		    .li-border li div:nth-child(2) img{width:0.55rem; height:0.6rem; margin-right: 0.25rem;}
 		    .li-border li div:nth-child(2) span{line-height: 1.2rem;}
+		    .total{font-size: 0.8rem; text-align: right; padding-right: 1.875rem; line-height: 2.5rem; color:#333333;}
+		    .total span{font-weight: bold; color:#ca1218}
 		</style>
 	</head>
 	<body>
 		<div class="page-group">
-			<header>
-				<div class="job-detail-header otoc-p-r">
-					<div class="job-detail-tip otoc-p-a"><img src="img/job-detail-sgz.png" alt=""/></div>
-					<div class="car-num-container otoc-p-r">
-						<img src="img/job-detail-caricon.png" alt="" />
-						<div>
-							<p class="otoc-fontsize-18">浙B-4444</p>
-							<p class="otoc-fontsize-16" style="color: #666666;">类型：维修</p>
-						</div>
-						<div class="otoc-p-a otoc-semicircle otoc-semicircle-right"></div>
-						<div class="otoc-p-a otoc-semicircle otoc-semicircle-left"></div>
-					</div>
-					<ul>
-						<li>工单号：GD201706190001</li>
-						<li>服务顾问：张三</li>
-						<li>开单时间：2017-06-19 13:31:39</li>
-						<li>服务门店：氧车乐新乐汇店</li>
-					</ul>
-				</div>
-			</header>
-			<div class="otoc-bg-white">
-				<ul class="detai-container">
-					<li class="product-info">
-						<div class="otoc-p-r">
-							<span>产品信息</span>
-							<span>￥596 </span>
-							<i class="shrink-icon otoc-p-a"></i>
+			<div class="page">
+				<div class="content">
+					<div class="job-detail-header otoc-p-r">
+						<div class="job-detail-tip otoc-p-a"><img src="img/job-detail-sgz.png" alt=""/></div>
+						<div class="car-num-container otoc-p-r">
+							<img src="img/job-detail-caricon.png" alt="" />
+							<div>
+								<p class="otoc-fontsize-18">浙B-4444</p>
+								<p class="otoc-fontsize-16" style="color: #666666;">类型：维修</p>
+							</div>
+							<div class="otoc-p-a otoc-semicircle otoc-semicircle-right"></div>
+							<div class="otoc-p-a otoc-semicircle otoc-semicircle-left"></div>
 						</div>
 						<ul>
-							<li>
-								<span>乐氧常护套餐</span>
-								<span>￥298</span>
-							</li>
-							<li>
-								<span>乐氧常护套餐</span>
-								<span>￥298</span>
-							</li>
+							<li>工单号：GD201706190001</li>
+							<li>服务顾问：张三</li>
+							<li>开单时间：2017-06-19 13:31:39</li>
+							<li>服务门店：氧车乐新乐汇店</li>
 						</ul>
-					</li>
-					<li class="project-info">
-						<div class="otoc-p-r">
-							<span>项目信息</span>
-							<span>￥200 </span>
-							<i class="shrink-icon otoc-p-a"></i>
-						</div>
-						<ul class=" li-border">
-							<li>
-								<div>
-									<span>更换机油</span>
-									<span>￥100</span>
-								</div>
-								<div>
-									<span> <img src="img/job-detail-people.png" alt="" />陈飘香 陈泽锋 陈飘香 </span>
-									<span >预计完工：2017-07-05 9：00</span>
-								</div>
-							</li>
-							<li>
-								<div>
-									<span>更换机油</span>
-									<span>￥100</span>
-								</div>
-								<div>
-									<span> <img src="img/job-detail-people.png" alt="" />陈飘香 陈泽锋 陈飘香 </span>
-									<span >预计完工：2017-07-05 9：00</span>
-								</div>
-							</li>
-							
-						</ul>
-					</li>
-					<li class="project-info">
-						<div class="otoc-p-r">
-							<span>项目信息</span>
-							<span>￥200 </span>
-							<i class="shrink-icon otoc-p-a"></i>
-						</div>
-						<ul class=" li-border">
-							<li>
-								<div>
-									<span>更换机油</span>
-									<span>￥100</span>
-								</div>
-								<div>
-									<span> <img src="img/job-detail-people.png" alt="" />陈飘香 陈泽锋 陈飘香 </span>
-									<span >预计完工：2017-07-05 9：00</span>
-								</div>
-							</li>
-							<li>
-								<div>
-									<span>更换机油</span>
-									<span>￥100</span>
-								</div>
-								<div>
-									<span> <img src="img/job-detail-people.png" alt="" />陈飘香 陈泽锋 陈飘香 </span>
-									<span >预计完工：2017-07-05 9：00</span>
-								</div>
-							</li>
-							
-						</ul>
-					</li>
-					
-				</ul>
+					</div>
+					<ul class="detai-container otoc-bg-white">
+						<li class="product-info">
+							<div class="otoc-p-r">
+								<span>产品信息</span>
+								<span>￥596 </span>
+								<i class="shrink-icon otoc-p-a up"></i>
+							</div>
+							<ul>
+								<li>
+									<span>乐氧常护套餐</span>
+									<span>￥298</span>
+								</li>
+								<li>
+									<span>乐氧常护套餐</span>
+									<span>￥298</span>
+								</li>
+							</ul>
+						</li>
+						<li class="project-info">
+							<div class="otoc-p-r">
+								<span>项目信息</span>
+								<span>￥200 </span>
+								<i class="shrink-icon otoc-p-a up"></i>
+							</div>
+							<ul class=" li-border">
+								<li>
+									<div>
+										<span>更换机油</span>
+										<span>￥100</span>
+									</div>
+									<div>
+										<span> <img src="img/job-detail-people.png" alt="" />陈飘香 陈泽锋 陈飘香 </span>
+										<span >预计完工：2017-07-05 9：00</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<span>更换机油</span>
+										<span>￥100</span>
+									</div>
+									<div>
+										<span> <img src="img/job-detail-people.png" alt="" />陈飘香 陈泽锋  </span>
+										<span >预计完工：2017-07-06 12：00</span>
+									</div>
+								</li>
+								
+							</ul>
+						</li>
+						<li class="parts-info">
+							<div class="otoc-p-r">
+								<span>配件信息</span>
+								<span>￥600 </span>
+								<i class="shrink-icon otoc-p-a up"></i>
+							</div>
+							<ul class=" li-border">
+								<li>
+									<div>
+										<span>刹车片</span>
+										<span>4*100</span>
+										<span>￥400</span>
+									</div>
+									<div>
+										<span> <img src="img/job-detail-people.png" alt="" />陈飘香 张小明 </span>
+										<span >预计完工：2017-07-05 9：00</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<span>火花塞</span>
+										<span>1*200</span>
+										<span>￥200</span>
+									</div>
+									<div>
+										<span> <img src="img/job-detail-people.png" alt="" />陈飘香 陈泽锋 陈飘香 </span>
+										<span >预计完工：2017-07-05 9：00</span>
+									</div>
+								</li>
+								
+							</ul>
+						</li>
+						<li class="other-info">
+							<div class="otoc-p-r">
+								<span>其他</span>
+								<span>￥298 </span>
+								<i class="shrink-icon otoc-p-a up"></i>
+							</div>
+							<ul>
+								<li>
+									<span>高温补贴</span>
+									<span>￥298</span>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<div class="total otoc-m-t-10 otoc-bg-white">总计：<span>￥1234</span></div>
+				</div>
 			</div>
+			
 		</div>
 	</body>
 </html>
@@ -159,3 +179,21 @@
 <!--SUI框架-->
 <!--OTOC 开始-->
 <link rel="stylesheet" href="css/otoc-main.css" />
+<script>
+	$(function(){
+		
+		/*点击收缩展示信息详情*/
+		$(".shrink-icon").on("click",function(){
+			var drop_parts =$(this).parent().next("ul");
+			console.log(drop_parts);
+			if($(drop_parts).is(":visible")){
+				$(drop_parts).slideUp();
+				$(this).removeClass("up").addClass("down");
+			}
+			else{
+				$(drop_parts).slideDown();
+				$(this).removeClass("down").addClass("up");
+			}
+		})
+	})
+</script>
