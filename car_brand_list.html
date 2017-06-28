@@ -1544,16 +1544,16 @@
         
         /*插入A-Z*/
       	$("#list .brand-key").each(function(){
-      		var a_z = $(this).text();
-//    		console.log(a_z);  		
-      		var scrollTop = $(this).offset().top;	
-//    		console.log(scrollTop);
-      		var html ='<li id='+a_z+' data-scroll ='+ scrollTop +'>'+a_z+'</li>';
+      		var a_z = $(this).text(),
+      		scrollTop = $(this).offset().top,	
+      		html ='<li id='+a_z+' data-scroll ='+ scrollTop +'>'+a_z+'</li>';
       		$(".a_z ul").append(html);
       	});
+      	/*动态设置A-Z样式*/
+      	var mTop = ($(".a_z").height()) /2 - $(".a_z ul").height() /2 + 22 + "px";
+      	$(".a_z ul").css("margin-top",mTop);
       	
       	$("#a_z").on("touchstart touchmove",'ul li',function(e){
-      		
       		/*点击字母检索，清楚搜索结果，显示全部列表*/
       		$("#search").val('');
       		$('#seach-container ul').html('');
@@ -1563,36 +1563,35 @@
 		    e = e || window.event;
 		    var touch = e.originalEvent.targetTouches[0];
 		    var ele = document.elementFromPoint(touch.pageX, touch.pageY);
-		    
+		    /*console.log(touch.pageX, touch.pageY);
+		    $("#a_z li").each(function(){
+		    	var y = $(this).offset().top; 
+		    	var x = $(this).offset().left; 
+		    	
+		    	if(touch.pageX >= x && touch.pageY <= y+$(this).height() && touch.pageY >= y){
+		    		console.log(123);
+		    		console.log("x:"+ x,"y:"+y,$(this).height());
+		    	}
+		    });*/
             /*展示点击字母*/
-           if($(ele).text() != $("#letter").text){
+           /*if($(ele).text() != $("#letter").text){
            		var LetterBox=$('#letter');
 	            var LetterHtml=$(ele ).html();
 	            LetterBox.html(LetterHtml).fadeIn(); 
 	            setTimeout(function(){ LetterBox.fadeOut(); },500);
-           }
+            }*/
             
             
             /*滚动相应位置*/
-      		var scrollTop = $(ele ).data("scroll") - 54;
-      		var brandKey = $(ele ).data("id");
+      		var scrollTop = $(ele ).data("scroll") - 54,
+      		brandKey = $(ele ).data("id");
       		$(".content").scrollTop(scrollTop);
       		
       	});
       	
-//    	$("#a_z ul li").on('touchmove',function(e){
-//    		event.preventDefault();
-//		    e = e || window.event;
-//		    var touch = e.originalEvent.targetTouches[0];
-//		    var ele = document.elementFromPoint(touch.pageX, touch.pageY);
-//		    console.log(ele);
-//    		
-//    	});
       	
-    
-      	var mTop = ($(".a_z").height()) /2 - $(".a_z ul").height() /2 + 22 + "px";
-      	console.log(mTop);
-      	$(".a_z ul").css("margin-top",mTop);
+      	
+      	
       	
 	})
 </script>
