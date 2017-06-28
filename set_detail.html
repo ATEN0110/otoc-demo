@@ -7,7 +7,7 @@
 		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
-		<script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+		<!--<script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>-->
 		<style>
 			ul{margin: 0; padding: 0;}
 			ul li{list-style: none; margin: 0; padding: 0;}
@@ -27,8 +27,7 @@
 			/*内容*/
 			.detai-container{margin-bottom: 2.75rem;}
 			.detai-container>li>div{display:flex; justify-content:space-between; line-height: 3rem; border-top:1px solid #efeff4; 
-				border-bottom:1px solid #efeff4; border-left: 0.25rem solid #69cfed ; 	
-			}
+				border-bottom:1px solid #efeff4; border-left: 0.25rem solid #69cfed ; 	}
 			.detai-container>li>div span:nth-child(1){margin-left: 0.5rem; font-size: 0.75rem; color: #333333;}
 			.detai-container>li>div span:nth-child(2){margin-right:1.875rem; font-size: 0.8rem; font-weight: bold; color: #333333;}
 			.shrink-icon{width:1.1rem; height:1.1rem;  top: 0.95rem; right:0.4rem; }
@@ -37,16 +36,16 @@
 			.detai-container>li>ul{padding:0.5rem 0; margin-left: 0.75rem; margin-right: 1.875rem;}
 			
 			.detai-container>li>ul li div{display: flex;justify-content:space-between; font-size: 0.7rem; color: #666; line-height: 1.5rem;}
-	    .li-border li{ border-bottom: 1px solid #efeff4; padding-bottom: 0.25rem; margin-bottom: 0.25rem;}
-	    .li-border li:last-child {border-bottom: none;}
-	    .li-border li div{display: flex;justify-content:space-between;flex-wrap:wrap;}
-	    .li-border li div:nth-child(1) span{font-size: 0.7rem; line-height: 1.2rem; color: #666666;}
-	    .li-border li div:nth-child(2){font-size: 0.5rem;  color: #999999;}
-	    .li-border li div:nth-child(2) img{width:0.55rem; height:0.6rem; margin-right: 0.25rem; vertical-align: text-top;}
-	    .li-border li div:nth-child(2) .coupon{ width:0.875rem; height:0.625rem;}
-	    .li-border li div:nth-child(2) span{line-height: 1.2rem;}
-	    .total{width:100%;position: fixed;left: 0; bottom: 0;font-size: 0.8rem; text-align: right;border-top:0.25rem solid #efeff4; padding-right: 1.875rem; line-height: 2.5rem;background-color: #ffffff;}
-	    .total span{font-weight: bold; color:#DD5B5F;}
+		    .li-border li{ border-bottom: 1px solid #efeff4; padding-bottom: 0.25rem; margin-bottom: 0.25rem;}
+		    .li-border li:last-child {border-bottom: none; margin-bottom: 0; padding-bottom: 0;}
+		    .li-border li div{display: flex;justify-content:space-between;flex-wrap:wrap;}
+		    .li-border li div:nth-child(1) span{font-size: 0.7rem; line-height: 1.2rem; color: #666666;}
+		    .li-border li div:nth-child(2){font-size: 0.5rem;  color: #999999;}
+		    .li-border li div:nth-child(2) img{width:0.55rem; height:0.6rem; margin-right: 0.25rem; vertical-align: text-top;}
+		    .li-border li div:nth-child(2) .coupon{ width:0.875rem; height:0.625rem;}
+		    .li-border li div:nth-child(2) span{line-height: 1.2rem;}
+		    .total{width:100%;position: fixed;left: 0; bottom: 0;font-size: 0.8rem; text-align: right;border-top:0.25rem solid #efeff4; padding-right: 1.875rem; line-height: 2.5rem;background-color: #ffffff;}
+		    .total span{font-weight: bold; color:#DD5B5F;}
 		</style>
 	</head>
 	<body>
@@ -70,7 +69,7 @@
 							<li>欠款：<span class="otoc-textcolor-danger">￥600</span></li>
 						</ul>
 						<div class="alink otoc-p-a">
-							<a href="javascript：void(0);" class="otoc-fontsize-14 otoc-textcolor-green">支付详情 ></a>
+							<a href="#" class="otoc-fontsize-14 otoc-textcolor-green">支付详情 ></a>
 						</div>
 					</div>
 					<ul class="detai-container otoc-bg-white">
@@ -97,10 +96,7 @@
 										<span>乐氧常护套餐</span>
 										<span>￥298</span>
 									</div>
-									<div>
-										<span><img src="img/coupon.png" alt="" class="coupon" />包养产品优惠包养5折</span>
-										<div>实收：￥200</div>
-									</div>
+									
 									
 								</li>
 							</ul>
@@ -118,8 +114,8 @@
 										<span>￥100</span>
 									</div>
 									<div>
-										<span> <img src="img/job-detail-people.png" alt="" />陈飘香 陈泽锋 陈飘香 </span>
-										<span >预计完工：2017-07-05 9：00</span>
+										<span><img src="img/coupon.png" alt="" class="coupon" />包养产品优惠包养5折</span>
+										<div>实收：￥200</div>
 									</div>
 								</li>
 								<li>
@@ -128,8 +124,8 @@
 										<span>￥100</span>
 									</div>
 									<div>
-										<span> <img src="img/job-detail-people.png" alt="" />陈飘香 陈泽锋  </span>
-										<span >预计完工：2017-07-06 12：00</span>
+										<span><img src="img/coupon.png" alt="" class="coupon" />包养产品优惠包养5折</span>
+										<div>实收：￥200</div>
 									</div>
 								</li>
 								
@@ -149,8 +145,8 @@
 										<span>￥400</span>
 									</div>
 									<div>
-										<span> <img src="img/job-detail-people.png" alt="" />陈飘香 张小明 </span>
-										<span >预计完工：2017-07-05 9：00</span>
+										<span><img src="img/coupon.png" alt="" class="coupon" />包养产品优惠包养5折</span>
+										<div>实收：￥200</div>
 									</div>
 								</li>
 								<li>
@@ -160,8 +156,8 @@
 										<span>￥200</span>
 									</div>
 									<div>
-										<span> <img src="img/job-detail-people.png" alt="" />陈飘香 陈泽锋 陈飘香 </span>
-										<span >预计完工：2017-07-05 9：00</span>
+										<span><img src="img/coupon.png" alt="" class="coupon" />包养产品优惠包养5折</span>
+										<div>实收：￥200</div>
 									</div>
 								</li>
 								
@@ -207,13 +203,12 @@
 		/*点击收缩展示信息详情*/
 		$(".shrink-icon").on("click",function(){
 			var drop_parts =$(this).parent().next("ul");
-			console.log(drop_parts);
-			if($(drop_parts).is(":visible")){
-				$(drop_parts).slideUp();
+			if($(drop_parts).css("display") == "block"){
+				$(drop_parts).hide();
 				$(this).removeClass("up").addClass("down");
 			}
 			else{
-				$(drop_parts).slideDown();
+				$(drop_parts).show();
 				$(this).removeClass("down").addClass("up");
 			}
 		})
