@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>工单详情</title>
+		<title>结算详情</title>
 		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -12,16 +12,17 @@
 			ul{margin: 0; padding: 0;}
 			ul li{list-style: none; margin: 0; padding: 0;}
 			/*头部*/
-			.job-detail-header {width:90%; margin: 1rem 5%; background-color: #fff; border-radius: 0.6rem;}
-			.job-detail-tip{width:4rem; height:4rem; top:-0.25rem; right: -0.25rem;}
-			.job-detail-tip img{max-width: 4rem; max-height:4rem;}
-			.job-detail-header .car-num-container{padding: 1rem 13%; display: flex;  align-items:center;  border-bottom:1px #E6E6E6 dashed;}
-			.job-detail-header .car-num-container img{width:5.4rem; height:2.54rem; margin-right: 10%;}
-			.job-detail-header .car-num-container .otoc-semicircle {width:0.9rem; height:0.9rem; background-color: #efeff4; border-radius: 50%;}
-			.job-detail-header .car-num-container .otoc-semicircle-left{left: -0.45rem; bottom:-0.45rem}
-			.job-detail-header .car-num-container .otoc-semicircle-right{right: -0.45rem; bottom:-0.45rem}
-			.job-detail-header ul{ margin:1rem 13%; padding-bottom: 1rem;  font-size: 0.7rem; color:#666666}
-			.job-detail-header ul li{line-height: 1.375rem;}
+			.set-detail-header {width:90%; margin: 1rem 5%; background-color: #fff; border-radius: 0.6rem;}
+			.set-detail-tip{width:4rem; height:4rem; top:-0.25rem; right: -0.25rem;}
+			.set-detail-tip img{max-width: 4rem; max-height:4rem;}
+			.set-detail-header .car-num-container{padding: 1rem 13%; display: flex;  align-items:center;  border-bottom:1px #E6E6E6 dashed;}
+			.set-detail-header .car-num-container img{width:4rem; height:2.48rem; margin-right: 15%;}
+			.set-detail-header .car-num-container .otoc-semicircle {width:0.9rem; height:0.9rem; background-color: #efeff4; border-radius: 50%;}
+			.set-detail-header .car-num-container .otoc-semicircle-left{left: -0.45rem; bottom:-0.45rem}
+			.set-detail-header .car-num-container .otoc-semicircle-right{right: -0.45rem; bottom:-0.45rem}
+			.set-detail-header ul{ margin:1rem 13%; padding-bottom: 1rem;  font-size: 0.7rem; color:#666666}
+			.set-detail-header ul li{line-height: 1.375rem;}
+			.alink{ bottom:0.25rem; right:1rem;}
 			
 			/*内容*/
 			.detai-container{margin-bottom: 2.75rem;}
@@ -34,26 +35,28 @@
 			.up{background: url(img/job-detail-up.png);background-size:1.1rem 1.1rem ;}
 			.down{background: url(img/job-detail-down.png);background-size:1.1rem 1.1rem ;}
 			.detai-container>li>ul{padding:0.5rem 0; margin-left: 0.75rem; margin-right: 1.875rem;}
+			
 			.detai-container>li>ul li div{display: flex;justify-content:space-between; font-size: 0.7rem; color: #666; line-height: 1.5rem;}
-		    .li-border li{ border-bottom: 1px solid #efeff4; padding-bottom: 0.25rem; margin-bottom: 0.25rem;}
-		    .li-border li:last-child {border-bottom: none;}
-		    .li-border li div{display: flex;justify-content:space-between;flex-wrap:wrap;}
-		    .li-border li div:nth-child(1) span{font-size: 0.7rem; line-height: 1.2rem; color: #666666;}
-		    .li-border li div:nth-child(2){font-size: 0.5rem;  color: #999999;}
-		    .li-border li div:nth-child(2) img{width:0.55rem; height:0.6rem; margin-right: 0.25rem; vertical-align: text-top;}
-		    .li-border li div:nth-child(2) span{line-height: 1.2rem;}
-		    .total{width:100%;position: fixed;left: 0; bottom: 0;font-size: 0.8rem; text-align: right;border-top:0.25rem solid #efeff4; padding-right: 1.875rem; line-height: 2.5rem;background-color: #ffffff;}
-	    	.total span{font-weight: bold; color:#DD5B5F;}
+	    .li-border li{ border-bottom: 1px solid #efeff4; padding-bottom: 0.25rem; margin-bottom: 0.25rem;}
+	    .li-border li:last-child {border-bottom: none;}
+	    .li-border li div{display: flex;justify-content:space-between;flex-wrap:wrap;}
+	    .li-border li div:nth-child(1) span{font-size: 0.7rem; line-height: 1.2rem; color: #666666;}
+	    .li-border li div:nth-child(2){font-size: 0.5rem;  color: #999999;}
+	    .li-border li div:nth-child(2) img{width:0.55rem; height:0.6rem; margin-right: 0.25rem; vertical-align: text-top;}
+	    .li-border li div:nth-child(2) .coupon{ width:0.875rem; height:0.625rem;}
+	    .li-border li div:nth-child(2) span{line-height: 1.2rem;}
+	    .total{width:100%;position: fixed;left: 0; bottom: 0;font-size: 0.8rem; text-align: right;border-top:0.25rem solid #efeff4; padding-right: 1.875rem; line-height: 2.5rem;background-color: #ffffff;}
+	    .total span{font-weight: bold; color:#DD5B5F;}
 		</style>
 	</head>
 	<body>
 		<div class="page-group">
 			<div class="page">
 				<div class="content">
-					<div class="job-detail-header otoc-p-r">
-						<div class="job-detail-tip otoc-p-a"><img src="img/job-detail-sgz.png" alt=""/></div>
+					<div class="set-detail-header otoc-p-r">
+						<div class="set-detail-tip otoc-p-a"><img src="img/job-detail-wfk.png" alt=""/></div>
 						<div class="car-num-container otoc-p-r">
-							<img src="img/job-detail-caricon.png" alt="" />
+							<img src="img/money.png" alt="" />
 							<div>
 								<p class="otoc-fontsize-18">浙B-4444</p>
 								<p class="otoc-fontsize-16" style="color: #666666;">类型：维修</p>
@@ -62,11 +65,13 @@
 							<div class="otoc-p-a otoc-semicircle otoc-semicircle-left"></div>
 						</div>
 						<ul>
-							<li>工单号：GD201706190001</li>
-							<li>服务顾问：张三</li>
+							<li>结算单号：GD201706190001</li>
 							<li>开单时间：2017-06-19 13:31:39</li>
-							<li>服务门店：氧车乐新乐汇店</li>
+							<li>欠款：<span class="otoc-textcolor-danger">￥600</span></li>
 						</ul>
+						<div class="alink otoc-p-a">
+							<a href="javascript：void(0);" class="otoc-fontsize-14 otoc-textcolor-green">支付详情 ></a>
+						</div>
 					</div>
 					<ul class="detai-container otoc-bg-white">
 						<li class="product-info">
@@ -75,18 +80,28 @@
 								<span>￥596 </span>
 								<i class="shrink-icon otoc-p-a up"></i>
 							</div>
-							<ul>
+							<ul class="li-border">
 								<li>
 									<div>
 										<span>乐氧常护套餐</span>
 										<span>￥298</span>
 									</div>
+									<div>
+										<span><img src="img/coupon.png" alt="" class="coupon" />包养产品优惠包养5折</span>
+										<div>实收：￥200</div>
+									</div>
+									
 								</li>
 								<li>
 									<div>
 										<span>乐氧常护套餐</span>
 										<span>￥298</span>
 									</div>
+									<div>
+										<span><img src="img/coupon.png" alt="" class="coupon" />包养产品优惠包养5折</span>
+										<div>实收：￥200</div>
+									</div>
+									
 								</li>
 							</ul>
 						</li>
@@ -162,14 +177,14 @@
 								<li>
 									<div>
 										<span>高温补贴</span>
-										<span>￥298</span>
+									  <span>￥298</span>
 									</div>
 									
 								</li>
 							</ul>
 						</li>
 					</ul>
-					<div class="total otoc-m-t-10 otoc-bg-white">总计：<span>￥1234</span></div>
+					<div class="total otoc-m-t-10" style="">总计：<span>￥1234</span></div>
 				</div>
 			</div>
 			
