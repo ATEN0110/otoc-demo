@@ -25,7 +25,7 @@
 			.alink{ bottom:0.25rem; right:1rem;}
 			
 			/*内容*/
-			.detai-container{margin-bottom: 2.75rem;}
+			.detai-container{}
 			.detai-container>li>div{display:flex; justify-content:space-between; line-height: 3rem; border-top:1px solid #efeff4; 
 				border-bottom:1px solid #efeff4; border-left: 0.25rem solid #69cfed ; 	}
 			.detai-container>li>div span:nth-child(1){margin-left: 0.5rem; font-size: 0.75rem; color: #333333;}
@@ -46,6 +46,76 @@
 		    .li-border li div:nth-child(2) span{line-height: 1.2rem;}
 		    .total{width:100%;position: fixed;left: 0; bottom: 0;font-size: 0.8rem; text-align: right;border-top:0.25rem solid #efeff4; padding-right: 1.875rem; line-height: 2.5rem;background-color: #ffffff;}
 		    .total span{font-weight: bold; color:#DD5B5F;}
+		    
+			/*我的评价*/
+			.comment-container{
+			    padding: 1rem;
+			    margin-bottom: 2.75rem;
+			}
+			.comment-header{
+			    display: flex;
+			    justify-content: space-between;
+			    font-size: 0.7rem;
+			    color:#999999;
+			}
+			.my-comment-box{
+			    padding: 0.6rem;
+			    border:1px solid #ffd4a6 ;
+			    border-radius: 0.25rem;
+			    background-color: #faf3e9;
+			}
+			.my-comment-box div:nth-child(1){
+			    display: flex;
+			    align-items:center;
+			}
+			.my-comment-box div:nth-child(1) img{
+			    width:1.5rem;
+			    height:1.5rem;
+			    margin-right: 0.5rem;
+			}
+			.my-comment-box div:nth-child(1) ul{
+			    display: flex;
+			    margin-left: 0.5rem;
+			}
+			.my-comment-box div:nth-child(1) ul li{
+			    width:0.6rem;
+			    height:0.6rem;
+			    background:url(../img/comment/star1.png) no-repeat; margin-right: 0.25rem;
+			    background-size: 0.6rem 0.6rem;
+			    margin-right: 0.25rem;
+			}
+			.my-comment-box p{
+			    margin: 0.5rem 0 0 0;
+			    font-size: 0.7rem;
+			    color: #666666;
+			}
+			.otoc-comment-box{
+			    padding: 0.6rem;
+			    margin-top: 1.25rem;
+			    display: flex;
+			    align-items:center;
+			    border:1px solid #23bab5 ;
+			    border-radius: 0.25rem;
+			    background-color: #e3f6f5;
+			
+			}
+			.otoc-comment-box img{
+			    width:1.65rem;
+			    height:1.15rem;
+			}
+			.otoc-comment-box p{
+			    margin-left: 0.5rem;
+			    font-size: 0.7rem;
+			    color: #666666;
+			
+			}
+			.otoc-comment-time{
+			    top:-0.9rem;
+			    right:0;
+			    font-size: 0.6rem;
+			    color:#999999;
+			}
+		    
 		</style>
 	</head>
 	<body>
@@ -180,6 +250,30 @@
 							</ul>
 						</li>
 					</ul>
+					<div class="comment-container otoc-bg-white otoc-m-t-10">
+		                <div class="comment-header">
+		                    <span>&nbsp;- - - - - - - - - - -</span>
+		                    <span>我的评论</span>
+		                    <span> - - - - - - - - - - -&nbsp;</span>
+		                </div>
+		                <div class="my-comment-box otoc-m-t-10">
+		                    <div>
+		                        <img src="img/user/my-info-icon.png" alt="">
+		                        <span>张杰</span>
+		                        <ul>
+		                            <li></li>
+		                            <li></li>
+		                            <li></li>
+		                        </ul>
+		                    </div>
+		                    <p>“服务不错，环境干净!”</p>
+		                </div>
+		                <div class="otoc-comment-box otoc-p-r">
+		                    <div class="otoc-comment-time otoc-p-a">2017-06-06 19:00</div>
+		                    <img src="img/comment/otoc-logo.png" alt="">
+		                    <p>感谢您的支持，我们会继续努力！</p>
+		                </div>
+		            </div>
 					<div class="total otoc-m-t-10" style="">总计：<span>￥1234</span></div>
 				</div>
 			</div>

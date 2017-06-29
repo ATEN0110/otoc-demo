@@ -1558,11 +1558,12 @@
       		$("#search").val('');
       		$('#seach-container ul').html('');
             $('#list').show();
-            
+//          console.log(event.touches[0]);
             event.preventDefault();
 		    e = e || window.event;
 		    var touch = e.originalEvent.targetTouches[0];
 		    var ele = document.elementFromPoint(touch.pageX, touch.pageY);
+//		    var ele = event.touches[0].target;
 		    /*console.log(touch.pageX, touch.pageY);
 		    $("#a_z li").each(function(){
 		    	var y = $(this).offset().top; 
