@@ -64,10 +64,13 @@
 		  			<li>的原因</li>
 		  		</ul>
 		  	</div>
-        <div class="item-content">
+        <div class="item-content otoc-p-r">
 	        <div class="item-input otoc-m-t-10">
 	          <textarea class="textarea"></textarea>
 	        </div>
+	        <div class="note-text">
+            <p>为了更好的为您提供服务，请给我们宝贵的建议...</p>
+        	</div>
         </div>
         <a href="#" class="button button-big button-otoc otoc-m-20">提交</a>
        
@@ -80,17 +83,23 @@
 <script type="text/javascript">
   $(function(){
     /*textarea 默认文字*/
-    var val = "为了更好的为您提供服务，请给我们宝贵的建议...";
-    $(".textarea").val(val);
-    $(".textarea").focus(function(){
-      if($(this).val() == val){
-        $(this).val('');
-      }
-    }).blur(function(){
-      if($(this).val() == ''){
-        $(this).val(val);
-      }
-    });
+        //点击提示语 textarea也获取焦点
+        $(".note-text").on("click",function(){
+            $(".textarea").focus();
+            $(this).hide();
+        });
+
+        //失去焦点判断val值是否为空，空的话显示提示语
+        $(".textarea").focus(function(){
+            $(".note-text").hide();
+
+        }).blur(function(){
+            if($(".textarea").val() == ''){
+                $(".note-text").show();
+            }else{
+                $(".node-text").hide();
+            }
+        });
 
     $(".star-container ul li").click(function(){
       /*点击添加笑脸*/
