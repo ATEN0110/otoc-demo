@@ -15,20 +15,23 @@
 	    	
 	    	.pay-center-header {
 	    		padding: 1rem;
-	    		color: #ffffff;
-	    		background: -moz-linear-gradient(left, #43dcd2, #7eecda);
+	    		border-bottom: 1px solid #cccccc;
+	    		/*background: -moz-linear-gradient(left, #43dcd2, #7eecda);
 	    		background: -o-linear-gradient(left, #43dcd2, #7eecda);
-	    		background: -webkit-linear-gradient(left, #43dcd2, #7eecda);
+	    		background: -webkit-linear-gradient(left, #43dcd2, #7eecda);*/
 	    	}
 	    	
 	    	.pay-center-header p:nth-child(1) {
 	    		margin-top: 0.5rem;
 	    		font-size: 0.8rem;
+	    		color:#666666;
 	    	}
 	    	
 	    	.pay-center-header p:nth-child(2) {
 	    		font-size: 1.5rem;
 	    		margin-bottom: 0.5rem;
+	    		color:#333333;
+	    		font-weight: bold;
 	    	}
 	    	
 	    	.pay-center-header a {
@@ -46,22 +49,23 @@
 	    	.pay-center-list ul {
 	    		display: flex;
 	    		flex-wrap: wrap;
-	    		justify-content: space-between;
+	    		
 	    	}
 	    	
 	    	.pay-center-list ul li {
 	    		width: 30%;
+	    		margin-right: 3.333%;
 	    		margin-bottom: 0.625rem;
-	    		border: 1px solid #37b9ed;
+	    		border: 1px solid #00AAEE;
 	    		background-color: #ffffff;
 	    		border-radius: 4px;
 	    		line-height: 2rem;
 	    		font-size: 0.8rem;
 	    		font-weight: bold;
-	    		color: #37b9ed;
+	    		color: #00AAEE;
 	    		text-align: center;
 	    	}
-	    	.pay-center-list ul .active{background-color: #37b9ed; color: #ffffff;border: 1px solid #37b9ed;}
+	    	.pay-center-list ul .active{background-color: #00AAEE; color: #ffffff;border: 1px solid #00AAEE;}
 	    	.recharge-btn{display: none;position: fixed; bottom:0; left: 0; right: 0;}
 	    </style>
 	</head>
@@ -83,7 +87,7 @@
 						<li>1000</li>
 						<li>3000</li>
 						<li>5000</li>
-						<li>10000</li>
+						
 					</ul>
 	  			</div>
 	  			<div class="otoc-m-20 recharge-btn">
