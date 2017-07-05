@@ -12,10 +12,9 @@
 		<script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
 		<link rel="stylesheet" href="css/car.css" />
 	</head>
-
 	<body>
 		<div class="page-group">
-			<div class="page page-current">
+			<div class="page page-current" id='router'>
 				 <header class="bar bar-nav bar-white">	
 				   <div class="searchbar row">
 		                <div class="search-input col-80">
@@ -27,14 +26,12 @@
 		           <div id="letter">A</div>
 				</header>
 				<div id="a_z" class="a_z">
-					<ul>
-					
+					<ul>					
 					</ul>
 				</div>
 				<div class="content otoc-bg-white otoc-m-t-10">
 					 <div id="seach-container">
-		                <ul class="car-list">
-		
+		                <ul class="car-list">		
 		                </ul>
 		            </div>
 					<div id="list">				
@@ -44,13 +41,12 @@
 						<ul class="car-list car-brand">
 					
 							<li>
-								<a href="#" onclick="routerCarLineList(62)">
+								<a href="#router3" >
 					
 									<img src="http://brandpic.oss-cn-hangzhou.aliyuncs.com/car_brand-1a5f1659-2ed6-4b23-94a2-8733c73e4cde" />
 									<span class="brand-name">奥迪</span>
 								</a>
-							</li>
-					
+							</li>					
 							<li>
 								<a href="#" onclick="routerCarLineList(66)">
 					
@@ -1492,7 +1488,21 @@
 			</div>
 			<!--page-current end-->
 		</div>
-		<!--page end-->
+		
+		<div class="page" id='router3'>
+		  <header class="bar bar-nav">
+		    <a class="button button-link button-nav pull-left back" href="/docs-demos/router">
+		      <span class="icon icon-left"></span>
+		      返回
+		    </a>
+		    <h1 class='title'>路由</h1>
+		  </header>
+		  <div class="content">
+		    <div class="content-block">
+		      这是内联编写的页面，点击左上角的 <a href="" class='back'>返回</a> 按钮返回上一页。
+		    </div>
+		  </div>
+		</div>
 	</body>
 
 </html>

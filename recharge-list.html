@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <title>充值明细</title>
+	    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	    <style>
+	    	ul,
+	    	li {
+	    		margin: 0;
+	    		padding: 0;
+	    		list-style: none;
+	    	}
+	    	
+	    	.recharge-list li {
+	    		display: flex;
+	    		justify-content: space-between;
+	    		line-height: 2.1rem;
+	    		border-top: 1px solid #efeff4;
+	    		padding: 0 1rem;
+	    	}
+	    	
+	    	.recharge-list li span {
+	    		font-size: 0.6rem;
+	    		color: #999999;
+	    	}
+	    	
+	    	.recharge-sum {
+	    		font-weight: normal;
+	    		text-align: right;
+	    		font-size: 0.7rem;
+	    	}
+	    	
+	    	.recharge-sum span {
+	    		font-weight: bold;
+	    		line-height: 2.2rem;
+	    		font-size: 0.9rem;
+	    	}
+	    </style>
+	</head>
+	<body>
+		<div class="page-group">
+	  		<div class="content">
+	  			<div class="recharge-sum otoc-bg-white otoc-p-r-20">累计充值：<span >123</span></div>
+                <ul class="recharge-list otoc-bg-white">
+                	<li>
+                		<p class="recharge-num">500</p>
+                		<span>2017-06-06 9:00</span>
+                	</li>
+                	<li>
+                		<p class="recharge-num">1000</p>
+                		<span>2017-06-06 9:00</span>
+                	</li>
+                	<li>
+                		<p class="recharge-num">5000</p>
+                		<span>2017-06-06 9:00</span>
+                	</li>
+                </ul>
+              
+            </div> <!--content end-->
+	  		
+	 	</div>
+	</body>
+</html>
+<!--SUI框架-->
+<link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.css">
+  <!--SUI框架-->
+<script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.js' charset='utf-8'></script>
+<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.js' charset='utf-8'></script>
+<link rel="stylesheet" href="css/otoc-main.css" />
+<script>
+	$(function(){
+		
+		/*充值总计求和*/
+		var sum = 0 ;
+		$(".recharge-num").each(function(){
+			num = parseInt($(this).html());
+			sum = sum + num;
+		})
+		console.log(sum);
+		$(".recharge-sum span").html(sum);
+	})
+</script>

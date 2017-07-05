@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <title>充值中心</title>
+	    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	    <style type="text/css">
+	    	ul,
+	    	li {
+	    		margin: 0;
+	    		padding: 0;
+	    		list-style: none;
+	    	}
+	    	
+	    	.pay-center-header {
+	    		padding: 1rem;
+	    		color: #ffffff;
+	    		background: -moz-linear-gradient(left, #43dcd2, #7eecda);
+	    		background: -o-linear-gradient(left, #43dcd2, #7eecda);
+	    		background: -webkit-linear-gradient(left, #43dcd2, #7eecda);
+	    	}
+	    	
+	    	.pay-center-header p:nth-child(1) {
+	    		margin-top: 0.5rem;
+	    		font-size: 0.8rem;
+	    	}
+	    	
+	    	.pay-center-header p:nth-child(2) {
+	    		font-size: 1.5rem;
+	    		margin-bottom: 0.5rem;
+	    	}
+	    	
+	    	.pay-center-header a {
+	    		bottom: 0.75rem;
+	    		right: 1rem;
+	    		font-size: 0.6rem;
+	    		color: #00a9ee;
+	    	}
+	    	
+	    	.pay-center-list p {
+	    		font-size: 0.6rem;
+	    		color: #999999;
+	    	}
+	    	
+	    	.pay-center-list ul {
+	    		display: flex;
+	    		flex-wrap: wrap;
+	    		justify-content: space-between;
+	    	}
+	    	
+	    	.pay-center-list ul li {
+	    		width: 30%;
+	    		margin-bottom: 0.625rem;
+	    		border: 1px solid #37b9ed;
+	    		background-color: #ffffff;
+	    		border-radius: 4px;
+	    		line-height: 2rem;
+	    		font-size: 0.8rem;
+	    		font-weight: bold;
+	    		color: #37b9ed;
+	    		text-align: center;
+	    	}
+	    	.pay-center-list ul .active{background-color: #37b9ed; color: #ffffff;border: 1px solid #37b9ed;}
+	    	.recharge-btn{display: none;position: fixed; bottom:0; left: 0; right: 0;}
+	    </style>
+	</head>
+	<body>
+		<div class="page-group">
+	  		<div class="content otoc-bg-white">
+	  			<div class="pay-center-header otoc-p-r">
+	  				<p>余额帐户（元）</p>
+	  				<p>89000.00</p>
+	  				<a href="#" class="otoc-p-a">
+	  					充值明细 >> 
+	  				</a>
+	  			</div>
+	  			<div class="pay-center-list otoc-p-20">
+					<p class="otoc-m-b-10">选择充值金额</p>
+					<ul>
+						<li>100</li>
+						<li>500</li>
+						<li>1000</li>
+						<li>3000</li>
+						<li>5000</li>
+						<li>10000</li>
+					</ul>
+	  			</div>
+	  			<div class="otoc-m-20 recharge-btn">
+                    <a href="#" class="button button-big  button-otoc" external>确认充值</a>
+                </div>
+	  		</div>
+
+	 	</div>
+	</body>
+</html>
+<!--SUI框架-->
+<link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.css">
+
+<script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.js' charset='utf-8'></script>
+<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.js' charset='utf-8'></script>
+  <!--SUI框架-->
+
+<link rel="stylesheet" href="css/otoc-main.css" />
+<script>
+	$(".pay-center-list").on('click','ul li ',function(){
+		console.log($(this));
+		$(this).addClass("active").siblings().removeClass("active");
+		$(".recharge-btn").show();
+	})
+</script>

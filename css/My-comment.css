@@ -1,5 +1,6 @@
 ul{margin: 0; padding: 0; overflow: hidden;}
 ul li{list-style: none; }
+.hide{display: none !important; }
 .star-container{width:145px; margin:1rem auto;}
 .star-container ul {display: flex; justify-content:center;}
 .star-container ul li{width:24px;cursor:pointer;text-indent:-9999px;background:url(../img/star.png) no-repeat; margin-right: 0.25rem;}
@@ -11,4 +12,4 @@ ul li{list-style: none; }
 .reason-container ul li.active{color: #ec5353; border:1px #ff8181 solid;}
 .item-content {margin-bottom: 3.5rem; margin-top: 1.5rem;}
 .item-content .item-input{width:100%;}
-.item-content .item-input textarea.textarea{width:80%;padding: 2%; height:6rem; max-width: 80%; max-height: 6rem; margin-left:10%; border: 1px solid #E6E6E6; font-size: 0.6rem; color: #666666;}
+.item-content .item-input textarea.textarea{width:80%;padding: 2%; height:6rem; max-width: 80%; max-height: 6rem; margin-left:10%; border-top: none; border: 1px solid #E6E6E6; font-size: 0.6rem; color: #666666;}
